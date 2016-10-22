@@ -24,7 +24,7 @@ defmodule KawaiiKwotes.Router do
   #  pipe_through :api
   #end
   use FacebookMessenger.Phoenix.Router
-  facebook_routes "/api/webhook", TestController
+  facebook_routes "/api/webhook", KawaiiKwotes.MessagesController
 
 
 end
