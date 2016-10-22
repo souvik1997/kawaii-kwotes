@@ -8,5 +8,4 @@ algorithm utilize both your waifu's dialogue and Donald J. Trump's speeches, for
 adorable xenophobia!
 
 Arigatogozaimassssss~
-Fuzzy_Carnival Crew,
-See us at the next Gathering of the Juggalos, putting the ICP in ICPC!
+Kawaii Kwotes Krew
