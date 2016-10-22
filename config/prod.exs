@@ -68,6 +68,10 @@ config :microsoftbot,
   app_id: System.get_env("APP_ID"),
   app_secret: System.get_env("APP_SECRET")
 
+config :facebook_messenger,
+  facebook_page_token: System.get_env("PAGE_TOKEN"),
+  challenge_verification_token: System.get_env("VERIFY_TOKEN")
+
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 # this doesn't work on heroku

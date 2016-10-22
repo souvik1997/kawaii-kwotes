@@ -38,9 +38,11 @@ defmodule KawaiiKwotes.Mixfile do
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
+     {:poison, "~> 2.2.0", override: true},
      {:httpotion, "~> 3.0", override: true},
      {:ex_microsoftbot, "~> 0.1.0"},
-     {:phoenix_microsoftbot, "~> 0.1.0"}
+     {:phoenix_microsoftbot, "~> 0.1.0"},
+     {:phoenix_facebook_messenger, "~> 0.3.0"}
     ]
   end
 

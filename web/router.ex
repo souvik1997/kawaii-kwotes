@@ -20,9 +20,11 @@ defmodule KawaiiKwotes.Router do
     get "/", PageController, :index
   end
 
-  scope "/api", KawaiiKwotes do
-    pipe_through :api
-  end
+  #scope "/api", KawaiiKwotes do
+  #  pipe_through :api
+  #end
+  use FacebookMessenger.Phoenix.Router
+  facebook_routes "/api/webhook", TestController
 
-  microsoftbot_routes "/api/messages", KawaiiKwotes.MessagesController
+
 end
