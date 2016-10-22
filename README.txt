@@ -9,4 +9,4 @@ adorable xenophobia!
 
 Arigatogozaimassssss~
 Fuzzy_Carnival Crew,
-See us at the next Gathering of the Juggalos!
+See us at the next Gathering of the Juggalos, putting the ICP in ICPC!
