@@ -1,0 +1,22 @@
+{
+  "name": "kawaii-kwotes",
+  "version": "1.0.0",
+  "description": "To start your Phoenix app:",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/souvik1997/kawaii-kwotes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/souvik1997/kawaii-kwotes/issues"
+  },
+  "homepage": "https://github.com/souvik1997/kawaii-kwotes#readme"
+}
