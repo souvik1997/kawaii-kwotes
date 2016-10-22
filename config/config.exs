@@ -5,15 +5,12 @@
 # is restricted to this project.
 use Mix.Config
 
-# General application configuration
-config :kawaii_kwotes,
-  ecto_repos: [KawaiiKwotes.Repo]
-
 # Configures the endpoint
 config :kawaii_kwotes, KawaiiKwotes.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "BlPGXFlQKdFTT97l53GX0DAva0rwzD2P/G6K3SmbyN5HasFZ8QFGn9raOem20c4K",
-  render_errors: [view: KawaiiKwotes.ErrorView, accepts: ~w(html json)],
+  root: Path.dirname(__DIR__),
+  secret_key_base: "YaOVZRbaLGtZVFRTkXUONQgHLM2aJpgR+l5dd5c/GvaDIMNCDOq3EbnpxUI/fuoj",
+  render_errors: [accepts: ~w(html json)],
   pubsub: [name: KawaiiKwotes.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
@@ -25,3 +22,8 @@ config :logger, :console,
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env}.exs"
+
+# Configure phoenix generators
+config :phoenix, :generators,
+  migration: true,
+  binary_id: false

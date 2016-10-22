@@ -7,13 +7,15 @@ config :kawaii_kwotes, KawaiiKwotes.Endpoint,
   server: false
 
 # Print only warnings and errors during test
-config :logger, level: :warn
+config :logger, level: :info
 
-# Configure your database
-config :kawaii_kwotes, KawaiiKwotes.Repo,
-  adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "kawaii_kwotes_test",
-  hostname: "localhost",
-  pool: Ecto.Adapters.SQL.Sandbox
+config :kawaii_kwotes,
+  verify_token: "123123",
+  request_manager: RequestManager.Mock
+
+config :facebook_messenger,
+  request_manager: FacebookMessenger.RequestManager.Mock
+
+config :facebook_messenger,
+  facebook_page_token: "PAGE_TOKEN",
+  challenge_verification_token: "123123"

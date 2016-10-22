@@ -4,7 +4,7 @@ defmodule KawaiiKwotes.ConnCase do
   tests that require setting up a connection.
 
   Such tests rely on `Phoenix.ConnTest` and also
-  import other functionality to make it easier
+  imports other functionality to make it easier
   to build and query models.
 
   Finally, if the test case interacts with the database,
@@ -17,28 +17,14 @@ defmodule KawaiiKwotes.ConnCase do
 
   using do
     quote do
-      # Import conveniences for testing with connections
       use Phoenix.ConnTest
-
-      alias KawaiiKwotes.Repo
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
-
       import KawaiiKwotes.Router.Helpers
 
-      # The default endpoint for testing
       @endpoint KawaiiKwotes.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(KawaiiKwotes.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(KawaiiKwotes.Repo, {:shared, self()})
-    end
-
-    {:ok, conn: Phoenix.ConnTest.build_conn()}
+    {:ok, conn: Phoenix.ConnTest.conn()}
   end
 end
