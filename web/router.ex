@@ -1,5 +1,6 @@
 defmodule KawaiiKwotes.Router do
   use KawaiiKwotes.Web, :router
+  use MicrosoftBot.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -19,8 +20,9 @@ defmodule KawaiiKwotes.Router do
     get "/", PageController, :index
   end
 
-  # Other scopes may use custom stacks.
-  # scope "/api", KawaiiKwotes do
-  #   pipe_through :api
-  # end
+  scope "/api", KawaiiKwotes do
+    pipe_through :api
+  end
+
+  microsoftbot_routes "/api/messages", KawaiiKwotes.MessagesController
 end

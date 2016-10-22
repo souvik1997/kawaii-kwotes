@@ -56,6 +56,12 @@ config :logger, level: :info
 #     config :kawaii_kwotes, KawaiiKwotes.Endpoint, server: true
 #
 
+config :microsoftbot,
+  app_id: System.get_env("APP_ID"),
+  app_secret: System.get_env("APP_SECRET")
+
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
+
+
 import_config "prod.secret.exs"
