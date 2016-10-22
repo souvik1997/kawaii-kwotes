@@ -1,22 +1,20 @@
 {
-  "name": "kawaii-kwotes",
-  "version": "1.0.0",
-  "description": "To start your Phoenix app:",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "repository": {},
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "brunch build --production",
+    "watch": "brunch watch --stdin"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/souvik1997/kawaii-kwotes.git"
+  "dependencies": {
+    "phoenix": "file:deps/phoenix",
+    "phoenix_html": "file:deps/phoenix_html"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/souvik1997/kawaii-kwotes/issues"
-  },
-  "homepage": "https://github.com/souvik1997/kawaii-kwotes#readme"
+  "devDependencies": {
+    "babel-brunch": "~6.0.0",
+    "brunch": "2.7.4",
+    "clean-css-brunch": "~2.0.0",
+    "css-brunch": "~2.0.0",
+    "javascript-brunch": "~2.0.0",
+    "uglify-js-brunch": "~2.0.1"
+  }
 }

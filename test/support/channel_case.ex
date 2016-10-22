@@ -20,6 +20,11 @@ defmodule KawaiiKwotes.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
+      alias KawaiiKwotes.Repo
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query
+
 
       # The default endpoint for testing
       @endpoint KawaiiKwotes.Endpoint
@@ -27,6 +32,11 @@ defmodule KawaiiKwotes.ChannelCase do
   end
 
   setup tags do
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(KawaiiKwotes.Repo)
+
+    unless tags[:async] do
+      Ecto.Adapters.SQL.Sandbox.mode(KawaiiKwotes.Repo, {:shared, self()})
+    end
 
     :ok
   end

@@ -14,6 +14,8 @@ defmodule KawaiiKwotes.Endpoint do
   # Code reloading can be explicitly enabled under the
   # :code_reloader configuration of your endpoint.
   if code_reloading? do
+    socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
+    plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
   end
 
@@ -34,7 +36,7 @@ defmodule KawaiiKwotes.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_kawaii_kwotes_key",
-    signing_salt: "TP/xiWvX"
+    signing_salt: "LmQI2ns1"
 
   plug KawaiiKwotes.Router
 end

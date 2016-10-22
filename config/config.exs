@@ -5,11 +5,15 @@
 # is restricted to this project.
 use Mix.Config
 
+# General application configuration
+config :kawaii_kwotes,
+  ecto_repos: [KawaiiKwotes.Repo]
+
 # Configures the endpoint
 config :kawaii_kwotes, KawaiiKwotes.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "iJ+DXAm/Dez6qGP5cKXgKh+L4paJew30BTdYdus1wDu0YX/4tWQ04DDk7ro5qv/D",
-  render_errors: [view: KawaiiKwotes.ErrorView, accepts: ~w(json)],
+  secret_key_base: "BlPGXFlQKdFTT97l53GX0DAva0rwzD2P/G6K3SmbyN5HasFZ8QFGn9raOem20c4K",
+  render_errors: [view: KawaiiKwotes.ErrorView, accepts: ~w(html json)],
   pubsub: [name: KawaiiKwotes.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

@@ -18,13 +18,21 @@ defmodule KawaiiKwotes.Web do
 
   def model do
     quote do
-      # Define common model functionality
+      use Ecto.Schema
+
+      import Ecto
+      import Ecto.Changeset
+      import Ecto.Query
     end
   end
 
   def controller do
     quote do
       use Phoenix.Controller
+
+      alias KawaiiKwotes.Repo
+      import Ecto
+      import Ecto.Query
 
       import KawaiiKwotes.Router.Helpers
       import KawaiiKwotes.Gettext
@@ -37,6 +45,9 @@ defmodule KawaiiKwotes.Web do
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_csrf_token: 0, get_flash: 2, view_module: 1]
+
+      # Use all HTML functionality (forms, tags, etc)
+      use Phoenix.HTML
 
       import KawaiiKwotes.Router.Helpers
       import KawaiiKwotes.ErrorHelpers
@@ -53,6 +64,10 @@ defmodule KawaiiKwotes.Web do
   def channel do
     quote do
       use Phoenix.Channel
+
+      alias KawaiiKwotes.Repo
+      import Ecto
+      import Ecto.Query
       import KawaiiKwotes.Gettext
     end
   end

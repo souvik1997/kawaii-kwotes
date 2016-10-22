@@ -8,3 +8,12 @@ config :kawaii_kwotes, KawaiiKwotes.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+# Configure your database
+config :kawaii_kwotes, KawaiiKwotes.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  username: "postgres",
+  password: "postgres",
+  database: "kawaii_kwotes_test",
+  hostname: "localhost",
+  pool: Ecto.Adapters.SQL.Sandbox
