@@ -14,7 +14,8 @@ use Mix.Config
 config :kawaii_kwotes, KawaiiKwotes.Endpoint,
   http: [port: {:system, "PORT"}],
   url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/manifest.json"
+  cache_static_manifest: "priv/static/manifest.json",
+  secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -61,5 +62,3 @@ config :logger, level: :info
 config :microsoftbot,
   app_id: System.get_env("APP_ID"),
   app_secret: System.get_env("APP_SECRET")
-
-import_config "prod.secret.exs"
