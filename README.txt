@@ -7,6 +7,6 @@ waifu's dialogue. That being said, there will also be an option to have the
 algorithm utilize both your waifu's dialogue and Donald J. Trump's speeches, for
 adorable xenophobia!
 
-Origatogozaimashita!
+Arigatogozaimassssss~
 Fuzzy_Carnival Crew,
 See us at the next Gathering of the Juggalos!
