@@ -58,4 +58,8 @@ config :logger, level: :info
 
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
+config :microsoftbot,
+  app_id: System.get_env("APP_ID"),
+  app_secret: System.get_env("APP_SECRET")
+
 import_config "prod.secret.exs"

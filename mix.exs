@@ -31,6 +31,9 @@ defmodule KawaiiKwotes.Mixfile do
     [{:phoenix, "~> 1.2.1"},
      {:phoenix_pubsub, "~> 1.0"},
      {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:httpotion, "~> 3.0", override: true},
+     {:ex_microsoftbot, "~> 0.1.0"},
+     {:phoenix_microsoftbot, "~> 0.1.0"}]
   end
 end
