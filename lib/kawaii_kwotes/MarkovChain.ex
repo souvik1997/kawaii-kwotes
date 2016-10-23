@@ -1,11 +1,10 @@
 defmodule KawaiiKwotes.MarkovChain do
   use GenServer
   require Faust
+  require Logger
 
-  def start_link(_state, filename \\ []) do
-    {:ok, text} = File.read(filename)
-    {:ok, chain} = Faust.generate_chain(text, 3)
-    GenServer.start_link(__MODULE__, chain, filename)
+  def start_link(chain, opts \\ []) do
+    GenServer.start_link(__MODULE__, chain, opts)
   end
 
   def handle_call({:traverse, num}, _from, chain) do
