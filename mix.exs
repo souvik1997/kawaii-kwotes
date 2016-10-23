@@ -41,6 +41,7 @@ defmodule KawaiiKwotes.Mixfile do
      {:httpotion, "~> 3.0", override: true},
      {:ex_microsoftbot, "~> 0.1.0"},
      {:phoenix_microsoftbot, "~> 0.1.0"},
+     {:facebook_messenger, github: "souvik1997/facebook_messenger", override: true},
      {:phoenix_facebook_messenger, "~> 0.3.0"}
     ]
   end
