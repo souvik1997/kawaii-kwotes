@@ -22,13 +22,13 @@ defmodule KawaiiKwotes.WebHookController do
     Logger.info("response from FB #{inspect(res)}")
     res
   end
-
+  #calls payload and then mystery functions that work
   def json_payload(recepient, message) do
     payload(recepient, message)
     |> Poison.encode
     |> elem(1)
   end
-
+  #This puts the recipient into the message struct
   def payload(recepient, message) do
     %{message | :recipient => %{id: recepient}}
   end
