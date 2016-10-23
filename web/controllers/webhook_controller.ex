@@ -13,6 +13,7 @@ defmodule KawaiiKwotes.WebHookController do
                                                            url: "http://images6.fanpop.com/image/photos/34600000/Kawaii-girl-kawaii-anime-34624723-392-500.jpg"
                                                          }
                                                        }}})
-    FacebookMessenger.Sender.send(sender, %{message: %{text: "kawaii"}})
+    _ = FacebookMessenger.Sender.send(sender, %{message: %{text: "kawaii"}})
+    :ok
   end
 end
