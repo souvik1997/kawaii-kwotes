@@ -1,6 +1,5 @@
 defmodule KawaiiKwotes do
   use Application
-  require ExChain.MarkovModel
 
   # See http://elixir-lang.org/docs/stable/elixir/Application.html
   # for more information on OTP Applications
@@ -10,7 +9,6 @@ defmodule KawaiiKwotes do
     children = [
       # Start the endpoint when the application starts
       supervisor(KawaiiKwotes.Endpoint, []),
-      worker(ExChain.MarkovModel, [], [name: MyChain])
       # Here you could define other workers and supervisors as children
       # worker(KawaiiKwotes.Worker, [arg1, arg2, arg3]),
     ]
