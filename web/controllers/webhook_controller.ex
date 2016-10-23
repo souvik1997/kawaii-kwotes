@@ -4,7 +4,7 @@ defmodule KawaiiKwotes.WebHookController do
   require Logger
 
   def message_received(msg) do
-    # markovText = GenServer.call(KawaiiKwotes.MarkovChain, {:traverse, 200})
+    markovText = GenServer.call(MarkovChain, {:traverse, 200})
     text = FacebookMessenger.Response.message_texts(msg) |> hd
     sender = FacebookMessenger.Response.message_senders(msg) |> hd
     Logger.info("received text: #{inspect(text)}")
