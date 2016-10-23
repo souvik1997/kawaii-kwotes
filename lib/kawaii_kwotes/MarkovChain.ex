@@ -3,12 +3,12 @@ defmodule KawaiiKwotes.MarkovChain do
   require Faust
   require Logger
 
-  def start_link(chain, opts \\ []) do
-    GenServer.start_link(__MODULE__, chain, opts)
+  def start_link(state, opts \\ []) do
+    GenServer.start_link(__MODULE__, state, opts)
   end
 
-  def handle_call({:traverse, num}, _from, chain) do
-    {:reply, Faust.traverse(chain, num)}
+  def handle_call({:traverse, num}, _from, state) do
+    {:reply, Faust.traverse(state, num), state}
   end
 
 end

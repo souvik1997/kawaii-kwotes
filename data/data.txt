@@ -1,50 +1,3984 @@
-defmodule KawaiiKwotes.Mixfile do
-  use Mix.Project
+﻿The Project Gutenberg EBook of The American Missionary -- Volume 32, No.
+8, August, 1878, by Various
 
-  def project do
-    [app: :kawaii_kwotes,
-     version: "0.0.1",
-     elixir: "~> 1.0",
-     elixirc_paths: elixirc_paths(Mix.env),
-     compilers: [:phoenix] ++ Mix.compilers,
-     build_embedded: Mix.env == :prod,
-     start_permanent: Mix.env == :prod,
-     deps: deps]
-  end
+This eBook is for the use of anyone anywhere in the United States and most
+other parts of the world at no cost and with almost no restrictions
+whatsoever.  You may copy it, give it away or re-use it under the terms of
+the Project Gutenberg License included with this eBook or online at
+www.gutenberg.org.  If you are not located in the United States, you'll have
+to check the laws of the country where you are located before using this ebook.
 
-  # Configuration for the OTP application.
-  #
-  # Type `mix help compile.app` for more information.
-  def application do
-    [mod: {KawaiiKwotes, []},
-     applications: [:phoenix, :cowboy, :logger, :phoenix_facebook_messenger]]
-  end
+Title: The American Missionary -- Volume 32, No. 8, August, 1878
 
-  # Specifies which paths to compile per environment.
-  defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
-  defp elixirc_paths(_),     do: ["lib", "web"]
+Author: Various
 
-  # Specifies your project dependencies.
-  #
-  # Type `mix help deps` for examples and options.
+Release Date: October 22, 2016 [EBook #53340]
 
-  defp deps do
-    [{:phoenix, "~> 1.2.1"},
-     {:phoenix_pubsub, "~> 1.0"},
-     {:phoenix_ecto, "~> 3.0"},
-     {:postgrex, ">= 0.0.0"},
-     {:phoenix_html, "~> 2.6"},
-     {:phoenix_live_reload, "~> 1.0", only: :dev},
-     {:gettext, "~> 0.11"},
-     {:cowboy, "~> 1.0"},
-     {:poison, "~> 2.2.0", override: true},
-     {:httpotion, "~> 3.0", override: true},
-     {:ex_microsoftbot, "~> 0.1.0"},
-     {:phoenix_microsoftbot, "~> 0.1.0"},
-     {:facebook_messenger, github: "souvik1997/facebook_messenger", override: true, tag: "master"},
-     {:phoenix_facebook_messenger, "~> 0.3.0"},
-     {:faust, "~> 0.1.0"}
-    ]
-  end
+Language: English
 
-end
+Character set encoding: UTF-8
+
+*** START OF THIS PROJECT GUTENBERG EBOOK AMERICAN MISSIONARY, AUGUST 1878 ***
+
+
+
+
+Produced by KarenD, Joshua Hutchinson and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+file was produced from images generously made available
+by Cornell University Digital Collections)
+
+
+
+
+
+
+
+
+
+  VOL. XXXII.                                         NO. 8.
+
+
+                                THE
+
+                       AMERICAN MISSIONARY.
+
+                 *       *       *       *       *
+
+               “To the Poor the Gospel is Preached.”
+
+                 *       *       *       *       *
+
+                           AUGUST, 1878.
+
+
+
+
+                            _CONTENTS_:
+
+
+  EDITORIAL.
+
+    OUR GRADUATES                                             225
+    PARAGRAPHS                                           225, 226
+    THE LAW OF RESTITUTION                                    226
+    S. S. AND M. M. CONCERT                                   227
+    ADDRESS AT THE BOSTON ANNIVERSARY                         228
+    ITEMS FROM CHURCHES AND SCHOOLS                           230
+    GENERAL NOTES: The Freedmen, Africa, The Indian      232, 233
+
+
+  THE FREEDMEN.
+
+    VIRGINIA—Religious Interest at Hampton: Rev.
+      Richard Tolman                                          235
+
+    NORTH CAROLINA—Contrasts and Progress: Rev.
+      D. D. Dodge                                             235
+
+    SOUTH CAROLINA—Brewer Normal School: J. D.
+      Backenstose                                             237
+
+    GEORGIA—Atlanta University, by a Georgia
+      Editor.—Lewis High School at Macon: Miss
+      Annette Lynch.—A Bright Day in Athens: Mr.
+      John McIntosh.—The Religious Work in Georgia:
+      Rev. F. Markham                                     237-241
+
+    ALABAMA—Two Ordinations at Talladega: Rev. Geo.
+      E. Hill.—Closing Days of Emerson Institute:
+      Miss S. J. Irwin                                        242
+
+    MISSISSIPPI—The Year at Tougaloo University:
+      Rev. G. Stanley Pope                                    243
+
+    LOUISIANA: “Here am I: Send Me, Send Me.”—From
+      New Orleans to New York: Rev. W. S. Alexander           244
+
+
+  AFRICA.
+
+    THE MENDI MISSION—Converts Added to the New Church;
+      Death of Mrs. Dr. James: Rev. Floyd Snelson             246
+
+
+  THE CHINESE.
+
+    ITEMS AND INCIDENTS: Rev. W. C. Pond                      247
+
+
+  THE CHILDREN’S PAGE                                         249
+
+
+  RECEIPTS                                                    250
+
+
+  CONSTITUTION                                                253
+
+
+  WORK, STATISTICS, WANTS, &c.                                254
+
+       *       *       *       *       *
+
+
+                             NEW YORK:
+
+         Published by the American Missionary Association,
+
+                      ROOMS, 56 READE STREET.
+
+                 *       *       *       *       *
+
+                Price, 50 Cents a Year, in advance.
+
+                 *       *       *       *       *
+
+           A. Anderson, Printer, 23 to 27 Vandewater St.
+
+
+
+
+                _American Missionary Association_,
+
+                      56 READE STREET, N. Y.
+
+                 *       *       *       *       *
+
+
+  PRESIDENT.
+
+    HON. E. S. TOBEY, Boston.
+
+
+  VICE PRESIDENTS.
+
+    Hon. F. D. PARISH, Ohio.
+    Rev. JONATHAN BLANCHARD, Ill.
+    Hon. E. D. HOLTON, Wis.
+    Hon. WILLIAM CLAFLIN, Mass.
+    Rev. STEPHEN THURSTON, D. D., Me.
+    Rev. SAMUEL HARRIS, D. D., Ct.
+    Rev. SILAS MCKEEN, D. D., Vt.
+    WM. C. CHAPIN, Esq., R. I.
+    Rev. W. T. EUSTIS, Mass.
+    Hon. A. C. BARSTOW, R. I.
+    Rev. THATCHER THAYER, D. D., R. I.
+    Rev. RAY PALMER, D. D., N. Y.
+    Rev. J. M. STURTEVANT, D. D., Ill.
+    Rev. W. W. PATTON, D. D., D. C.
+    Hon. SEYMOUR STRAIGHT, La.
+    Rev. D. M. GRAHAM, D. D., Mich.
+    HORACE HALLOCK, Esq., Mich.
+    Rev. CYRUS W. WALLACE, D. D., N. H.
+    Rev. EDWARD HAWES, Ct.
+    DOUGLAS PUTNAM, Esq., Ohio.
+    Hon. THADDEUS FAIRBANKS, Vt.
+    SAMUEL D. PORTER, Esq., N. Y.
+    Rev. M. M. G. DANA, D. D., Ct.
+    Rev. H. W. BEECHER, N. Y.
+    Gen. O. O. HOWARD, Oregon.
+    Rev. EDWARD L. CLARK, N. Y.
+    Rev. G. F. MAGOUN, D. D., Iowa.
+    Col. C. G. HAMMOND, Ill.
+    EDWARD SPAULDING, M. D., N. H.
+    DAVID RIPLEY, Esq., N. J.
+    Rev. WM. M. BARBOUR, D. D., Ct.
+    Rev. W. L. GAGE, Ct.
+    A. S. HATCH, Esq., N. Y.
+    Rev. J. H. FAIRCHILD, D. D., Ohio
+    Rev. H. A. STIMSON, Minn.
+    Rev. J. W. STRONG, D. D., Minn.
+    Rev. GEORGE THACHER, LL. D., Iowa.
+    Rev. A. L. STONE, D. D., California.
+    Rev. G. H. ATKINSON, D. D., Oregon.
+    Rev. J. E. RANKIN, D. D., D. C.
+    Rev. A. L. CHAPIN, D. D., Wis.
+    S. D. SMITH, Esq., Mass.
+    Rev. H. M. PARSONS, N. Y.
+    PETER SMITH, Esq., Mass.
+    Dea. JOHN WHITING, Mass.
+    Rev. WM. PATTON, D. D., Ct.
+    Hon. J. B. GRINNELL, Iowa.
+    Rev. WM. T. CARR, Ct.
+    Rev. HORACE WINSLOW, Ct.
+    Sir PETER COATS, Scotland.
+    Rev. HENRY ALLON, D. D., London, Eng.
+    WM. E. WHITING, Esq., N. Y.
+    J. M. PINKERTON, Esq., Mass.
+
+
+  CORRESPONDING SECRETARY.
+
+    REV. M. E. STRIEBY, _56 Reade Street, N. Y._
+
+
+  DISTRICT SECRETARIES.
+
+    REV. C. L. WOODWORTH, _Boston_.
+    REV. G. D. PIKE, _New York_.
+    REV. JAS. POWELL, _Chicago, Ill._
+
+    EDGAR KETCHUM, ESQ., _Treasurer, N. Y._
+    H. W. HUBBARD, ESQ., _Assistant Treasurer, N. Y._
+    REV. M. E. STRIEBY, _Recording Secretary_.
+
+
+  EXECUTIVE COMMITTEE.
+
+    ALONZO S. BALL,
+    A. S. BARNES,
+    EDWARD BEECHER,
+    GEO. M. BOYNTON,
+    WM. B. BROWN,
+    CLINTON B. FISK,
+    A. P. FOSTER,
+    E. A. GRAVES,
+    S. B. HALLIDAY,
+    SAM’L HOLMES,
+    S. S. JOCELYN,
+    ANDREW LESTER,
+    CHAS. L. MEAD,
+    JOHN H. WASHBURN,
+    G. B. WILLCOX.
+
+
+COMMUNICATIONS
+
+relating to the business of the Association may be addressed to
+either of the Secretaries as above.
+
+
+DONATIONS AND SUBSCRIPTIONS
+
+may be sent to H. W. Hubbard, 56 Reade Street, New York, or, when
+more convenient, to either of the branch offices, 21 Congregational
+House, Boston, Mass., 112 West Washington Street, Chicago, Ill.
+Drafts or checks sent to Mr. Hubbard should be made payable to his
+order as _Assistant Treasurer_.
+
+A payment of thirty dollars at one time constitutes a Life Member.
+
+Correspondents are specially requested to place at the head of
+each letter the name of their Post Office, and the County and State
+in which it is located.
+
+                 *       *       *       *       *
+
+
+
+
+                                THE
+
+                       AMERICAN MISSIONARY.
+
+                 *       *       *       *       *
+
+              VOL. XXXII.   AUGUST, 1878.      No. 8.
+
+                 *       *       *       *       *
+
+_American Missionary Association._
+
+       *       *       *       *       *
+
+
+OUR GRADUATES.
+
+The colleges of the land have just now been sending forth their
+classes of graduates, equipped for further study and for new work.
+The young men and women have passed their examinations and taken
+their degrees and made their speeches in hundreds of academic
+halls. Parents and patrons have gathered—these to see the gain and
+growth of their children, and those to rejoice in the good which
+their generous benefactions have accomplished. It is the harvest
+time in the collegiate year; though the crops are not gathered into
+garners, but scattered and sown at once for other growths.
+
+Our schools and colleges, too, have come to the end of another
+year. Examination and commencement times come to all impartially
+under the fifteenth amendment. We do not profess that the graduates
+of our seven colleges go out equipped, for depth and breadth of
+culture, on an equality with the sons of Yale or Harvard, but we do
+believe that they are fitted, and fitted well, for the work that
+is before them, and to be the leaders first of their own people.
+We do know that the religious impression made upon them is more
+general and more deep than in most Northern colleges, and that
+the influences under which they work and study foster and develop
+seriousness of purpose and that highest of all ambitions—the
+ambition to be useful. And so, in this our humbler work, we rejoice
+and take pride.
+
+Our Normal-school work is still the largest and perhaps the most
+important that we have to do. And when we follow in imagination,
+and occasionally by visitation, and frequently by communication,
+the pupils of our schools out into the little hamlets and
+cross-roads all over the Southern States, where they are teaching
+the mysteries of the A, B, C, to the little children, and the
+larger ones, who come from humblest homes, where the dark-skinned
+father and mother look with wondering admiration at the child—their
+child—who can tell “round O” from “crooked S,” we are filled with
+the sense of the magnitude and importance of this work of laying
+foundations on which are to be built the towers of intelligence
+and virtue. And we pray devoutly that God may bless each one of
+those who are going forth this year to teach the children of a long
+neglected race.
+
+       *       *       *       *       *
+
+We see that Stanley’s story of his journey, “_Through the Dark
+Continent_,” is published by Sampson, Low & Co., London. We have
+not yet examined it, but are sure that it will be of great interest
+and instructiveness even to those who have read his vivid letters
+in the _Herald_ from time to time.
+
+       *       *       *       *       *
+
+It is with deep regret that we record the death of Mrs. Dr. JAMES
+of the Mendi Mission, of which the tidings is given in another
+column. The other members of the mission are all well, and the work
+progresses both materially and spiritually; and the brave band who
+went back to carry the light of life to the dark land of their
+fathers, have not lost heart or hope because one of their number
+has gone up higher.
+
+       *       *       *       *       *
+
+We made a very full and frank statement three months ago in regard
+to our finances. We recognized the fact that the receipts up to
+that time had been better than for the corresponding months of
+the previous year. It gave us peculiar pleasure to make that
+statement. And now, having spoken so, we wish to be heard on the
+other side. For it is equally true now, that the receipts have
+been diminishing, and for two months have been less than in the
+same months of the previous year. Friends, do not leave us in the
+lurch now, or spoil in the last two months of our fiscal year the
+improving record of the first ten. Our needs as your agents are
+very far beyond the means you furnish us.
+
+       *       *       *       *       *
+
+
+THE LAW OF RESTITUTION.
+
+The law of restitution is one which the religion of the Old
+Testament enforces, and which the New Testament does not relax. It
+applies, as all laws do, most pressingly to individuals, but it
+reaches out, as all laws do, to nations and to races.
+
+We have wronged the Negro, the Indian and the Chinaman—all
+three—and they therefore call on us, on our American nation, and
+on our English-speaking people, for redress, and for all that we
+can do to atone for past neglect—not only for past neglect, but
+injustice. Need I recite?
+
+It was in 1620 that the first slave ship landed her human freight
+upon the shores of Virginia, and, from that time for more than two
+centuries the deadly traffic was continued, and men, women and
+children were bought and sold like animals. We need not say, “But
+this was a Southern crime; we and our fathers were not guilty.”
+For two-thirds of that time, the whole nation were alike in it.
+Northern ships and Northern capital carried on the importation
+later than that. Our Northern fathers gave it up largely, it is
+true, as it is charged, because what was for the time profitable
+in South Carolina and in Georgia, did not pay in Massachusetts and
+Vermont. It was not until 1825 that the slaves were set free in
+the State of New Jersey. We do not propose to depict the evils and
+the sins of slavery. Thank God, they are in the past, save as the
+consequences are upon us still.
+
+I grant that good may have been done; that, in the end, it may be
+shown that elevation and enlightenment have followed from even this
+contact with a superior civilization and religion. God causes the
+wrath of man to praise Him; and even the sinful and the selfish
+acts of men are made the servants of His will. But that is hardly
+to be put to the credit of the thus indirect instruments of good.
+Rather, by what this good lacks of that which Christian motive and
+effort might have accomplished, we are guilty before God.
+
+The horrors enacted and still enacting on the dark continent of
+Africa—for the slave trade still continues—the enforced ignorance
+and enforced vice of two centuries and a half, the engrafting of
+the vices of civilization upon those of heathendom, are the charges
+which this nation has to meet before the bar of God. It is a debt
+which never can be paid. Is there no claim on us from the American
+Negro?
+
+How is it with the Indian? The original occupants of the territory
+now covered by these United States, and its possessors, as much as
+wandering hunters can be the owners of the soil, our fathers found
+them. What have they gained from us? The greed of the white man has
+pursued them from that day to this. From place to place they have
+been driven. Bargains have been broken and treaties violated, in
+almost every instance, first by the white man. The true history of
+almost every Indian war (so called) has been begun by the violence
+or provoked by the faithlessness of the white man. It was true
+of the Modoc, the Sitting Bull and the Nez Percès wars, and that
+evidently.
+
+What have we given the red man? Whisky and powder; the vices of
+civilization, and the means of war. A few missionaries have been
+among them, devoting themselves, with heroic self-denial, to the
+work of educating and elevating them, and, wherever the tribes
+among which they have labored have been far enough away to escape
+the too frequent trader and the settler, they have been teachable,
+have come to occupy farms, and learned to labor and to pray.
+
+Perhaps the halting and uncertain policy of the government has been
+its worst crime toward them for these last thirty years. And now,
+even under the peace policy, which has done very much for them,
+their disabilities are of the greatest.
+
+How can you expect to rouse ambitions for industry and intelligence
+among men who are not allowed to hold a title to the farms they
+have cleared, or the houses they have built, and who may be
+ordered, at the will of the government (which is often only the
+will of envious neighbors), to a new Reservation? How can you
+expect to Christianize a man, whose wrongs are unavenged, and who
+is hunted by an army if he avenges them himself? And yet, of the
+less than 300,000 Indians, over 40,000 can read, 12,000 attended
+school last year, 27,000 are church members. The government spent
+about one dollar a head in their education last year. It has cost,
+for forty years, about forty dollars a head—$12,000,000 annually—to
+fight them. Do we owe them anything?
+
+And the Chinaman? He is not a very large factor yet in our
+population. He owes the opium habit in some degree, at least, to
+the exigencies of English commerce. His account with this country
+has not been running very long yet. But it will be all we can
+do, if we do our utmost to Christianize him, to keep the account
+current balanced.
+
+He is met on the Pacific Coast (where his industry has already been
+of great value) with the cry, “Away with him back to China!” It has
+just been decided that he, being neither white nor black, cannot
+become a citizen in California.
+
+A few Christian men and women have opened schools to teach John
+the English alphabet; the New Testament has been his reading book.
+Already some 300 are converted men, and members of the churches,
+and have formed Christian associations, in which they live in
+Christian ways.
+
+And the question is: Shall we run in debt to the Chinaman, as we
+have to the Negro and the Indian? Would it not be well to keep in
+mind the Scripture saying now—“Owe no man anything, but to love one
+another”?
+
+If wrongs emphasize claims, surely the three races of men in our
+own land have a most convincing claim upon the people of the United
+States. Who will respond to it, if the Christian people fail to
+hear and heed it?
+
+       *       *       *       *       *
+
+
+S. S. AND M. M. CONCERT.
+
+REV. J. W. CHICKERING, D. D., BOSTON, MASS.
+
+These numerous initials form the shortest mode of designating an
+interesting, if not unique, meeting I had the pleasure of attending
+yesterday, in the Congregational Church at Amesbury, Mass., Rev.
+Pliny S. Boyd, pastor.
+
+They stand for “Sabbath-school and Missionary Monthly Concert”;
+the plan being to let the scholars do the reporting and the
+singing, with prayers from several teachers, and remarks from the
+superintendent, pastor and a visiting brother.
+
+The triple work of the American Missionary Association was
+assigned for this occasion; and it was encouraging for the future
+of benevolent effort in the church, to see how promptly class after
+class repeated the answers allotted them.
+
+Each will probably remember through life his or her part in the
+programme; and, from the whole, a very clear outline was furnished
+to the assembly of the numbers, needs, and capabilities of the
+Indians, Mongolians and Negroes within our borders.
+
+I was happy to be able to confirm and illustrate some of those
+statements, and to urge upon that intelligent church, and the
+flourishing Sabbath-school, from which seventy were received into
+communion last year, the pressing, may we not say paramount?
+importance of that department of missionary effort.
+
+If the “four millions” are suffered to live in vice and ignorance,
+and the superstition which is already seeking to overshadow them
+like the old fetichism of their ancestors, the American Church—yes,
+the nation—will find too late what a mistake they have made.
+
+Ten thousand such “Monthly Concerts” as this would go far in the
+direction of instructing the children and awaking their parents,
+respecting one of the great duties of the hour. Why not let it be
+tried?
+
+       *       *       *       *       *
+
+
+ADDRESS AT THE BOSTON ANNIVERSARY.
+
+BY REV. GEORGE R. MERRILL, BIDDEFORD, ME.
+
+I am to suggest three considerations which give _permanent_
+importance to our work among the despised races. The evangelization
+of six millions of people, one-seventh of our entire population,
+cannot be safely left to the enthusiasm aroused by special pleas,
+but must be grounded in such truth as shall make its prosecution a
+Christian and patriotic duty of supreme and abiding urgency.
+
+
+I.—The Test of our Christianity.
+
+If you please, let us call upon this platform four representative
+men. The first shall be of Anglo-Saxon lineage, the inheritor
+by birth of our ripe Christian civilization, and bearing upon
+him the marks of our characteristic civilized vices,—a man self
+sufficient, profane, intemperate and dishonest. Next him place an
+Indian, in all the brutality, sottishness and despair to which
+our guardianship of two centuries has brought him. The next is
+a Freedman, touched with his ancient race-superstitions, and
+possessed by the usual vices of a subject people. Last in the group
+set a Chinaman, just from the Joss House and the opium den.
+
+Now, do you, who represent the Christianity of the nineteenth
+century, stand before them with the gospel in your hands. Man of
+God, look upon these slaves of sin! Nations and languages, look on
+this man of God! and do you tell us what Christianity can do for
+these. What can it do for this white man? Triumphantly, you answer,
+“It can save him; can break down his self-sufficiency and pride,
+redeem him from his cups, make him an honest man, and, if he have
+committed sins, they shall be forgiven him.” What can it do for the
+Indian? “It can save him; make him sober and industrious, a servant
+of God.” What for this Negro? “It can save him, lift him out of his
+race-corruptions, and save him to God and man.” And what for this
+Chinaman? “The same. It can make him a man, reverent and devout
+to God, and useful to his fellows. The gospel is the power of God
+unto salvation to Mongol, Negro and Caucasian, and no barriers of
+race avail to hinder it.” Is this all? Has your gospel nothing more
+that it can do for this company? Then is it not the true and full
+gospel! That full gospel at the first gained wondrous victories.
+The proud pharisee and the despised publican, they of Cæsar’s
+household and the bond-slave—Jew and Gentile alike—came under its
+power. The Christianity of that day, the full gospel, not only
+saved them as individuals, made each one an heir of eternal life,
+but also fused and bound them into a true brotherhood.
+
+The Christianity of the nineteenth century is on trial as to
+whether it can do this. Its power to redeem the individual has been
+grandly illustrated before our eyes, and now the other question
+comes forward. Its answer will have many forms indeed. One of them
+is the attitude that Christian capital and Christian labor take
+to each other. But its marked test, the most illustrious triumph
+or conspicuous failure, is to be here among the despised races,
+whose representatives are before us. God has reserved for American
+Christianity this grand opportunity to show the world, that after
+eighteen centuries the gospel is shorn of none of its honor—that
+under its inspirations we are able to bind these despised races,
+regenerated and lifted up, into a true fellowship with ourselves.
+The American Missionary Association is your representative and
+servant to this end, and worthy such support as the gospel itself
+should receive.
+
+
+II.—The Test of our National Life.
+
+Mr. Matthew Arnold, in a recent essay, uses these words: “When we
+talk of man’s advance towards his full humanity, we think of an
+advance not along one line only, but several. The Hebrew race was
+pre-eminent on one great line. The Hellenic race was pre-eminent on
+another line.”
+
+Taking for truth the conception involved in these words, but with
+a Christian interpretation, it follows that a true Christian
+patriotism will not have respect to the permanence of party or the
+development of resources; these are means to its nobler ends.
+
+It will see in all history the developing thought of God, and in
+its own history a particular increment of that thought.
+
+These eighteen centuries, and those that are to follow, are the
+development of Christianity, and that development covers three
+zones, which circle and complete the globe—God’s relation to man,
+man’s relation to God, and man’s relation to man. During the five
+centuries nearest Christ, about the centres of Alexandria and
+Constantinople, influences rose and were moulded whose resultant
+was that view of God in his relation to man which is the common
+property of Christendom. For eleven centuries following, Divine
+Providence was shaping especially under the impulse of the
+Reformation, the confession of the scriptural relation of man to
+God. Then, with the seventeenth century, history passed into the
+third zone, in which is to be illustrated the Divine idea of man’s
+relation to man, which is, that the race is an organic brotherhood,
+because having one father, God, and one elder brother, Jesus Christ.
+
+From the first planting at Plymouth, God has been shaping our
+national experiences to draw the confession from us. Little by
+little the problem has grown upon us, as we were able to meet it.
+Two centuries and more were required to illustrate, through us, how
+the sublime socialism of the New Testament, could blend together
+in one brotherhood, representatives of all the white and dominant
+races of the world. And it is done, though not perfectly, indeed.
+English, Scotch, Irish, French, Dane, German and Russ—all over our
+land—are companies of them cemented into the equal brotherhood
+of a Christian Church and a Christian State. And now the deeper
+conditions of the problem are upon us. Within our borders are three
+races, neither white nor dominant. They are men; the Saviour died
+for them; the Holy Spirit calls them, one by one, into membership
+in the kingdom of God; they are our brothers by New Testament law.
+We are to make them organically one with us in a Christian state.
+Here, in the despised races, is the _test of our national life_.
+
+The American Missionary Association appeals to you, not only as
+Christian men in the name of the Christianity that is on trial
+as to its social power, but as American men in the name of God’s
+thought for the land, which it is working out as to the Negro, the
+Chinaman and the Indian. It says, “One is our Master, even Christ,
+and all we are brethren.”
+
+In the jail record of one of our cities, there are these entries
+after a convict’s name: “Occupation, _Statesman_; Religion,
+_None_.” Is it not a reproach to our Christianity, waiting for its
+grandest testimony; to our Christian patriotism, on which is laid
+the thought of God for the land, that in these years we have been
+so content to leave the care of the despised races, these “wards
+of the Almighty,” the elect for His noblest purpose, to those
+whose fit record is: “Occupation, _Statesmen_; Religion, _None_”!
+Two hundred and fifty years have been given us with the Indian to
+carry out “the great hope and inward zeal” of our fathers, a score
+of years almost with the Freedman and Chinaman. How long can we
+expect the Divine patience to delay ere it shall take away our
+opportunity, and give it to a nation bringing forth the fruits of
+righteousness?
+
+
+III.—The Example of Christ.
+
+There were despised classes among the Jews eighteen hundred years
+ago—publicans and sinners, from whom their betters withheld
+even the touch of their garments. But our Master, Jesus Christ,
+consorted with these, until they called Him, “the friend of
+publicans and sinners.” The Samaritans were a race despised of the
+Jews, yet to one of them our Lord made the earliest and clearest
+declaration of His Messiahship. Nay, at the outset of His mission,
+passing by the needy cities of Judah, He, our Lord, went to preach
+His gospel among the despised and dispersed who dwelt on the border
+of Zebulon and Napthalin, where “darkness covered the land and
+gross darkness the people.”
+
+The appeal that is made for the American Missionary Association, in
+the name of the witness to the gospel, and in the name of Christian
+patriotism, gains its height when it is made in the name of Christ.
+
+Every argument by which this work appeals to us to-day, is a
+prophecy of its success in our hands. Work among the despised
+races, work that sets the seal of power on the Christianity of our
+time, work that is to realize God’s thought for the land, work so
+Christly cannot fail!
+
+The American Missionary Association, to which this work is
+committed of God and the churches, needs but one thing of you. That
+is, money? No! It is but needed that there should be such incomes
+of the Holy Ghost into Christian hearts as shall lift up church
+membership from membership in a religious club to its true dignity
+of citizenship in the kingdom of God; such incomes of the Spirit as
+shall fill the heart of each citizen with the grand thought of the
+kingdom—brotherhood. Then, consecrated purses will be opened, and
+gold and silver, and greenbacks and bonds, will flow into the full
+treasury of the Lord.
+
+       *       *       *       *       *
+
+
+ITEMS FROM CHURCHES AND SCHOOLS.
+
+MCLEANSVILLE, N. C.—Five persons joined the church the last Sunday
+in June. Eighty-three communicants were present, all but three
+members of this church.
+
+DUDLEY, N. C.—Seventeen united with the church, Rev. D. Peebles,
+pastor, June 16. This church numbers over eighty members. Mr.
+George S. Smith, of Raleigh, and Miss Carrie Waugh, of Woodbridge,
+assisted in revival work.
+
+ORANGEBURG, S. C.—A deep religious interest is reported in
+this church. The school was closed June 18th, with appropriate
+exercises, and in the presence of a crowded audience.
+
+ATLANTA, GA.—On the third Sabbath in June six young people united
+with the college church upon profession, and as many more will
+probably unite during the vacation with churches at their homes.
+It has been a good year in the religious culture of the school,
+and a great gain is manifest in the earnestness and steadiness of
+Christian character attained. The Sabbath-school at this church
+found itself last Sabbath with _eleven_ less teachers than the week
+before; the reason being that nearly that number of young people
+had gone into the country to teach summer schools for three months.
+The fact suggests one of the sources of influence such a church
+has, as well as one of the difficulties of carrying it on.
+
+—Mr. S. P. Smith, of Chicago Seminary, has taken up the work
+with the First Church, during Mr. Ashley’s vacation, under very
+favorable auspices. The people are united and hopeful.
+
+GOLDING’S GROVE, GA.—School closed June 20th.
+
+CUTHBERT, GA.—The school at this place, re-opened two years ago,
+reports a good year’s work. Over a hundred pupils have been in
+attendance, some of them adults and elders and deacons of churches.
+A reading-room has been kept up. A large attendance witnessed the
+examinations and closing exercises. Mr. R. R. Wright, from Atlanta,
+is the teacher.
+
+WOODVILLE, GA.—“Little Aubor (one of our school girls) is very
+ill. During the late revival she had made up her mind to become
+a Christian, but her father was a stumbling-block in her way. He
+gave her a severe whipping, and kept her away from the protracted
+meetings. Shortly afterward she was taken ill, and said to him,
+‘Oh, father, I wanted to give my heart to Christ, but you have
+kept me away.’ Yesterday, when I asked her if she was praying, she
+answered in a whisper, ‘I am praying, I am praying, I am praying.’”
+
+ANNISTON, ALA.—Rev. Peter J. McIntosh was ordained pastor of this
+church June 18th. Sermon by Rev. D. L. Hickok, of Talladega.
+The proprietor of the hotel showed his good-will by giving free
+entertainment to all the white visitors. The indications for
+spiritual prosperity are encouraging.
+
+CHILDERSBURG, ALA.—Rev. Alfred Jones was ordained June 20th. The
+church building has just been plastered. A series of special
+services are in contemplation. Congregations average from fifty-six
+to eighty.
+
+TALLADEGA, ALA.—The following indicates the vacation work of some
+of the students for the next three months: J. D. Smith goes to
+preach at Savannah, Ga.; H. S. Williams to Montgomery; Andrew
+Headen to Selma, to begin work at once; J. B. Sims to Marietta,
+Ga., to begin the last Sunday in June. P. W. Young has charge
+of the church at Kingston; John Strong, of the Lawson Church,
+organized last summer; Barbour Grant of the Cove Church; Thornton
+Benson of the church at Alabama Furnace. They receive from $20 to
+$25 a month. Peter J. McIntosh was ordained pastor of the church at
+Anniston, and Alfred Jones at Childersburg, and are referred to in
+Rev. Mr. Hill’s letter.
+
+MOBILE, ALA.—Emerson Institute finds its new building admirably
+adapted to its uses; has received evidences of increasing favor
+with the white citizens of Mobile; is under great obligations to
+Dr. Morrell for placing his professional skill as a physician at
+the disposal of the teachers, and refusing all compensation. Its
+teachers are doing good service in the various Sunday-schools of
+the city.
+
+MEMPHIS, TENN.—A permanent library, to which the colored people
+may have free access, has been begun by the faculty of Le Moyne
+Normal School. Some hundreds of books have been secured, and during
+the coming summer vacation a commodious reading-room is to be
+fitted up. More volumes will be added from time to time, as means
+are secured, and it is confidently expected that the near future
+will see this excellent project firmly established, and doing the
+work for which it is designed. During the closing week at the
+school the junior-class gave an exhibition, the proceeds of which
+are to be used for the library. Donations of books are solicited.
+
+       *       *       *       *       *
+
+
+GENERAL NOTES.
+
+
+The Freedmen.
+
+—The _Congregationalist_ says, in its report of the examination
+of the students of Andover Theological Seminary: “One of the
+best recitations made in Greek was by a young man from Atlanta
+University, a suggestive item for the churches interested in that
+institution.”
+
+—The Presbyterian General Assembly has transferred its eighty
+colored churches from the Board of Home Missions back to the
+Committee on Freedmen. The committee, having somewhat enlarged its
+educational work, appeals to the Presbyterian churches for more
+liberal and more general contributions.
+
+—The Southern Presbyterian General Assembly reported as contributed
+for the evangelization of the colored people, during the last year,
+$416.75, to which the Reformed (Dutch) Church added $359.25.
+
+—The _Christian at Work_ describes a colored church, south, of
+which it says: “It was an aristocratic institution, as it seemed,
+and a failure. The preacher read his sermon, the singing was
+operatic, and the whole thing a ludicrous burlesque. White people
+go to an unhealthy extreme, often, in suppressing emotion, but for
+the colored folks to imitate this folly is death outright.”
+
+—The same correspondent says of a missionary to the freedmen, whom
+he chanced to meet: “I said to him, as we were taking our leave,
+‘It takes a good deal of grit and grace to stand the pressure here,
+don’t it?’ ‘One can get _very near the Lord here_,’ he replied;
+‘indeed, he has to get very near Him to do any good.’”
+
+—A Louisiana correspondent sums up a letter to the
+_Congregationalist_ thus: “In spite of all drawbacks, the tendency
+of the colored churches in Louisiana is upward. The Sunday-schools
+are well attended, and properly taught. The church members are
+orderly and industrious citizens, respected in the communities
+in which they live, and ready and willing to contribute, to the
+full extent of their means, for any Christian purposes. Take
+them altogether, the progress of the colored churches has been
+sufficiently rapid to gratify any one who prays that the beams
+of the Sun of Righteousness may illumine the dark corners of the
+earth.”
+
+—“There is no teacher so wholesome as personal necessity. In South
+Carolina a few men and many women cling absolutely to the past,
+learning nothing, forgetting nothing. But the bulk of thinking men
+see that the old Southern society is as absolutely annihilated
+as the feudal system, and that there is no other form of society
+now possible except such as prevails at the North and West. The
+dream of re-enslaving the negro, if it ever existed, is like the
+negro’s dream, if he ever had it, of five acres and a mule from
+the government. Both races have long since come down to the stern
+reality of self-support. No sane Southerner would now take back as
+slaves, were they offered, a race of men who have been for a dozen
+years freemen and voters.”—_Col. Higginson in the Atlantic._
+
+       *       *       *       *       *
+
+
+Africa.
+
+—The barque _Azor_, which sailed April 21st for Africa, arrived
+at Sierra Leone, May 19th. There were several cases of measles
+before the sailing, and this malady spread rapidly. The ship fever,
+which came from overcrowding, was worse, however, and increased
+by scantiness of water and lack of proper medical attendance.
+Twenty-three of the emigrants died on the way. The barque was towed
+to Monrovia by an English steamer.
+
+—A despatch to the _Herald_ represents the emigrants as being
+almost destitute of money, some of them holding notes of the Exodus
+Association, which is said to be unable to meet its obligations.
+
+—Another ship load of freedmen are waiting at Charleston to take
+passage as soon as the _Azor_ returns. She is probably on her way
+before this date.
+
+—It is a gratifying fact to the friends of the American
+Colonization Society that in sending over 160 expeditions to
+Liberia, no serious casualty has happened either to vessel or
+emigrants. Special care has been taken to make their passage
+safe and comfortable, and kind Providence has given prosperity.
+The last expedition of the society left New York, June 19, with
+sixty-nine emigrants on board the barque _Liberia_ from Virginia,
+North Carolina and Florida. When four days out, in a heavy fog, she
+collided with an Austrian vessel, and, losing her bowsprit, put
+back for repairs. She left again, Monday, July 1st.
+
+—France has just appropriated 100,000 francs for a scientific
+expedition to Central Africa, under M. L’Abbé Debaize. He is a
+young man of thirty-three, of fine education and attainments,
+familiar with Arabic, Coptic and some East African languages; and
+having passed special courses in divinity, astronomy and natural
+history, much is anticipated from his investigations. He sailed
+from Marseilles about two months ago, and is now probably at
+Zanzibar, fitting out for the proposed journey across Equatorial
+Africa.
+
+       *       *       *       *       *
+
+
+The Indian.
+
+We reprint the following from the N. Y. _Tribune_, as giving the
+best and most consecutive account of the reported outbreaks among
+the Indians of Oregon, Washington Territory and Idaho, which we
+have been able to find. It ascribes the origin of the difficulty to
+the lack and scantiness of appropriations for the Indian Service.
+We do not vouch for the exactness of the report. It accords with
+the dispatches received from day to day:
+
+The last report of the Commissioner of Indian Affairs shows that
+the savage tribes of Idaho and Eastern Oregon, which are taking
+part, more or less, in the present war, number about 7,400 souls.
+They are capable of sending into the field 2,500 warriors; and
+the telegraph dispatches, printed above, indicate that about that
+number of savages have already joined the two great war parties
+which are menacing the settlements of that region, and with which a
+heavy battle may be fought any day now by the troops under command
+of General Howard. The census of the tribes is as follows:
+
+Fort Hall Agency                    Bannocks, Shoshones              1,507
+Lemhi Agency                        Sheepeaters, Bannocks, Shoshones   940
+Idaho Indians, not under an agent   Pend d’Oreilles, Kootenais         600
+Grande Ronde Agency                                                    819
+Malhewr Agency                      Piutes, Snakes                     759
+Umatilla Agency                     Walla-Wallas, Cayuses, Umatillas   849
+Roving Indians on the Columbia, renegades, etc.                      2,000
+
+The Indians at these agencies have been kept in a state of
+constant agitation for more than a year by the singular delay
+of Congress in making appropriations for the Indian service,
+and by the scantiness of the appropriations when made. For the
+Malhewr Agency in Oregon, the Indians of which have gone to war,
+the appropriation was $50,000 in 1873, and $40,000 for the two
+successive years; but in 1876 it was reduced to $25,000, and in
+1877 to $20,000. The agent begged that if Congress intended to
+persist in this course it would build a saw and grist-mill for the
+Indians, but it was not done. At the Fort Hall and Lemhi Agency in
+Idaho, where the present uprising began, the Indians were nearly
+starved by the government. About 500 had to leave Fort Hall to
+hunt up a subsistence for themselves; and last May the agent at
+Lemhi was studying how to remove the band to a new location, to
+protect it from the government. The outbreak on the part of the Nez
+Percès, a year ago, did not affect these Indians at the time. They
+all remained quiet and loyal, but they have had their own troubles
+since, and have grown impatient at the failure of the government to
+feed them.
+
+The present outbreak began the latter part of May, when Buffalo
+Horn, a noted scout, took out 200 Bannocks, and camped in the lava
+beds between Big Camas Prairie and Snake River, in the southern
+part of Idaho. The news of this rising spread over Idaho and
+Eastern Oregon very quickly, and, in a fortnight’s time, all the
+Indians of that region were in a state of excitement, and began
+raiding the valleys and driving off and killing stock by the
+hundred head. The United States troops in that region consisted
+of a few companies of cavalry and infantry, scattered about the
+two territories at the military posts. This was an insufficient
+protection, and the citizens of Boise City, in Idaho, Walla-Walla,
+in Oregon, Camp Harney and elsewhere, formed themselves into
+volunteer companies for active operations. About June 1, Colonel
+Bernard, with seventy cavalry and twenty citizens, started on a
+forced march to Big Camas Prairie. The Indians did not await them
+there, but began moving westward along Idaho River in straggling
+bands, dining off the stock and killing occasional settlers on the
+march. Howard sent orders at once to Bernard to return, which he
+did, pursuing the Bannocks into the Owyhee country in the southeast
+corner of Oregon. One incident of this movement on the part of
+the Indians was a fight between seventeen citizens and about 100
+Indians, about June 6, in which two volunteers and eight Indians
+were killed.
+
+A concentration of Indians took place in Southeastern Oregon, and,
+on June 23, Bernard came upon a camp of them 1,500 strong. He had
+only 200 men, but he surprised the camp, routed it and chased
+the band for ten miles. A large number of Indians were killed.
+Bernard lost four killed and three wounded. The savages retreated
+to Stein’s Mountain. General Howard arrived on the field after the
+fight, with Miles and Downey, having marched forty-five miles a day
+to catch up with Bernard. From Stein’s Mountain the Indians moved
+northward toward Camp Harney and Canyon City. They attacked neither
+place, but concentrated on John Day River, where they are in camp,
+1,500 strong, according to the dispatches printed above.
+
+The other band of hostile Indians is on what is called Camas
+Prairie, north of the Salmon river, in Central Idaho, the scene
+of the outbreak by Joseph’s band of Nez Percès last year. The
+dispatches just received state that this party is composed chiefly
+of Snakes, and is about 1,000 strong.
+
+The Klamaths at the agency in Southwestern Oregon began to commit
+depredations about June 25. The band then numbered about 800.
+
+—Some of those most intelligent in Indian affairs believe that
+a general Indian war is an impossibility, unless the General
+Government shall adopt some strangely unwise and hostile
+policy. Even then the various tribes would not unite, but fight
+independently, so much stronger are their mutual antipathies and
+feuds than their hatred of the whites.
+
+—The transfer of the Indians to the War Department has not been
+accomplished. The whole matter has been referred to a joint
+committee, consisting of three members of the Senate and five
+members of the House, to investigate and report next January upon
+the expediency of such a transfer.
+
+—The _Advance_ says: “If the report shall be in its favor, the
+transfer will be because the religious press and the friends of the
+peace policy neglect their duty. It is stated that a majority of
+the House branch of the Commission is opposed to the change.”
+
+—The _Christian Union_ offers this suggestion: “The various
+missionary bodies ought now to confer with each other, agree, if
+possible, on the policy to be pursued toward the Indians, and then
+send to Washington a delegation of the ablest men of the respective
+denominations to urge its adoption. The fact that Secretary Schurz
+is out of favor with Congress, is a poor reason for shifting the
+Indians from his department, and we have yet to see any better
+one assigned. The simple question is: How can the Indian tribes
+be most easily civilized and Christianized, and so brought into
+assimilation with Americans? And that is a question on which the
+churches of America ought to have something to say.”
+
+—The _Independent_ gives its testimony thus: “It is entirely clear
+to our minds that the peace policy adopted in 1869, for which
+great credit is due to General Grant, and which, not without some
+imperfections, has been pursued ever since, is the best that ever
+was adopted in this country, and in its principles and purpose the
+only one that ever should be adopted. The statistics show that the
+condition of the Indians, in all the elements that go to make up
+the idea of civilization, has immensely improved within the last
+ten years, under the benign influence of this policy. Our idea
+on this subject is, that it is best to let well enough alone,
+especially since we cannot make it better. Let us do right by the
+Indian for the present, observing our treaties with him, dealing
+justly by him, and fighting him only when compelled to do so by
+a stern necessity, and then trust the providence of God for the
+future.”
+
+       *       *       *       *       *
+
+
+
+
+THE FREEDMEN.
+
+       *       *       *       *       *
+
+
+VIRGINIA.
+
+Religious Interest at Hampton—Missionary Zeal.
+
+REV. RICHARD TOLMAN, HAMPTON.
+
+Six of our students united with the church by profession June 9th,
+the last Sabbath of the school-year, making twenty-seven who have
+joined us since November 1st, besides those who have connected
+themselves with other churches. After Commencement, May 23d, two
+more of the graduating-class came out on “the Lord’s side,” so that
+all but four of the boarding-pupils of that class are hopefully
+Christian; and one of these four seems now “not far from the
+kingdom of God.”
+
+An interesting example of what Christian faith and perseverance
+may accomplish, is that of a colored brother connected with our
+printing-office. About a year since, he proposed starting a
+Sabbath-school in a destitute neighborhood, but was told that it
+would be of no use. He determined to try. Beginning with three
+pupils, the number has constantly increased, until now he has a
+school of more than eighty deeply-interested members. We need many
+such laborers in these harvest-fields.
+
+
+NORTH CAROLINA.
+
+The Church—Contrasts and Progress—Two Prayers.
+
+REV. D. D. DODGE, WILMINGTON.
+
+Our church-work is distinct from the school, the latter being
+not in any sense sectarian. We think we see marked improvement
+in the character of those who have been longest members of the
+church. They seem to hunger for truth for the purpose of living
+it, and their progress is, of course, steady and rapid. We are
+often thrilled by the rich experience as manifested by unconscious
+expressions in the prayer-meetings. We have received six new
+members during the year:
+
+It may be well to hear what impression is made upon a new comer, so
+I quote from one of our teachers who has been with us only a year.
+
+“To hear of the degradation of the colored people of the South is
+to know but little of it, for ‘the half can ne’er be told.’ It is
+humiliating to think that in our own beloved land there exists so
+much of barbarism and heathenish superstition. This is realized by
+looking at the homes and home-life of the poor people, but much
+more by noticing their form of religion.
+
+“I had visited lowly cots and abodes of poverty, seeming devoid of
+even the bare necessaries of life. Sometimes, in one small house
+several families huddled together, the little ones swarming in
+the yard like bees from the hive on a sunny day. I had seen poor
+sewing women trying to earn a bare subsistence—trying to keep by
+that little weapon, the needle, the wolf from the door. And I had
+thought what must life be worth to such suffering ones? And yet the
+degradation of this poor people never came to me with such force as
+when, for the first time, I entered a colored church, and witnessed
+scenes such as I had heard of, but never could realize without
+_seeing_.
+
+“The meeting was in progress when we entered, many talking or
+standing ready for a chance to be heard, others jumping and
+clapping their hands. One man, who gesticulated fiercely and
+screamed hoarsely, exhorted the brethren and sisters to ‘look out
+for the devil—he’s after yer—he’ll run yer inter the briers, but
+yer mus’ put on yer shoes—he’ll knock yer down, but yer mus’ get
+up an’ run, an’ put on yer shoes.’ Finally, in his frenzy, we
+could distinguish nothing except, in broken utterances, ‘put on
+yer shoes! put on yer shoes! put on yer shoes!’ amid the shouts of
+laughter and cheers which urged him on, coming chiefly from the
+female portion of the audience. He at length sat down exhausted,
+when a woman rose in mid-air, with a wild scream, coming down
+head-foremost, while all around were others shouting or jumping up
+and down. This, with variations, continued amidst quavering, weird
+music, the big cape bonnets bobbing to and fro, keeping time. At
+length the minister, who seemed to prefer order, wished to close
+the meeting, when immediately the people began to disperse, he
+calling to them to keep their places until after the benediction
+should be given, but they paid no heed. Whereupon he proceeded
+to lecture them on this wise: ‘If I were at one of your houses
+and should take my hat and leave without saying good day, you
+would think it was a piece of very ill politeness,’—and more to
+the same effect; but the tide not being stayed, he called upon
+a fine-looking young man to pronounce the benediction, which he
+did with such an air of ease and grace as contrasted strangely
+with all the surroundings, and I turned away in silent wonder at
+him, as being one of such a crowd. I never felt so truly thankful
+for a better way that is opened to them, and that even a few are
+struggling to elevate themselves,—are found sitting ‘clothed and in
+their right mind,’ learning truth.
+
+“For there _is_ a brighter side, and it is only by keeping in
+mind the motto, ‘_look_ on the _bright_ side’ that there is
+encouragement to make continued efforts for the uplifting of those
+who do not wish it for themselves. That there are noble exceptions
+we are glad and thankful. The little church planted here, as a
+branch from the true vine, though in number small, is noble in its
+strength of purpose, and the willingness of heart found in each
+member. So eager to learn, so thankful to be taught, it has been a
+pleasure to teach them as they have come to our night-school.”
+
+At the closing session of our Sabbath-school, five young men
+made short addresses. Their words were hearty and stirring, and
+expressed a deep satisfaction with what they had gained in the
+school, as they looked back over the time they had attended, one
+of them adding modestly, “Not that I would have you think that I
+have learned so _much_ of the Bible, for I don’t know anything of
+any great account.” Ah! but what he has learned he has practiced
+so faithfully that he is a shining light to all who know him, and
+his words are eloquent with the power behind them of a consistent
+life. All of these young men are a power for good in the city. Two
+others, members of the church, are not in town, but we believe they
+are living true lives elsewhere.
+
+I close by giving you the quaint words of two prayers, offered
+when the family was away, and jotted down by the one teacher who
+was left in charge. The excellent spirit shines through the strange
+clothing:
+
+“O, Lord! please make us wise enough to see sin before we get to
+it, that we may shun it; and won’t you please cause people to fall
+out wi’ their ways and accept your ways.”
+
+For the teachers gone North:
+
+“Bless those who is absent; be with ’em and keep an eye on ’em, and
+bless ’em week in and week out; bless those who is afflicted and
+isn’t feeling well; help ’em to get out of the state which they is
+in; prop ’em up in strength and also in grace, and prepare ’em for
+the work they is calkerlated for. Teach us Thy way, and make us
+more wiser in reading Thy word. Help us to grow more steadfaster,
+more loviner, more sincerer, and more wiser.”
+
+       *       *       *       *       *
+
+
+SOUTH CAROLINA.
+
+Brewer Normal School—The Year’s Work.
+
+J.D. BACKENSTOSE, GREENWOOD.
+
+This institution has just closed the best year of its history, and
+looks out upon the year to come more hopefully than ever before.
+The examinations on Tuesday and Wednesday were close, and eminently
+satisfactory to all present, and there was a good attendance.
+
+The great day, July 4th, dawned. The morning was a little cloudy,
+the air was cool and delightful. A great crowd of people assembled
+at eleven o’clock in the morning, to hear orations from four of our
+former students: W. W. Frazier, R. J. Holloway, B. H. Wimms and L.
+C. Waller, who are now engaged in teaching. The young men acquitted
+themselves nobly, and all who were present speak highly of them.
+
+The dinner given by the patrons and friends of the institution
+equalled anything of the kind ever given in this place. The table
+was loaded with everything that heart could wish for and that
+loving hands could provide. An exhibition, consisting of speeches,
+recitations and dialogues, interspersed with singing, took place in
+the evening. The house was filled to its utmost capacity, and it
+was with difficulty that the speakers could make their way to the
+stage. All present seemed delighted with the exercises.
+
+Prizes were awarded to Miss Louise Griffin and Miss Maria Logan for
+being the best speakers.
+
+Several of the white citizens of the place, including Rev. Mr.
+Smart, of the M. E. Church south, and Prof. Hodges, of the Male
+Academy of this place, were present at the exhibition, and
+expressed themselves as pleased with what they saw and heard. All
+the colored pastors of the place, with the exception of the African
+Methodist, were present during most of the exercises, and seemed
+delighted with the proficiency exhibited.
+
+During the year the students’ rooms have been neatly furnished,
+and are now quite comfortable. The students have made gratifying
+progress in their studies, and we feel that a year’s advancement
+has been made. Twenty-six of our students are now engaged in
+teaching, and over eleven hundred pupils are under their care.
+
+We have met with hindrances. We have been accused of prejudicing
+our students against their church, and of punishing them if they
+did not attend our Sunday-school; but, despite all this, our
+school has been unusually full, and our Sunday-school large and
+interesting. The students have all gone to their homes, or to some
+work, to make preparation for their return next fall.
+
+       *       *       *       *       *
+
+
+GEORGIA.
+
+Atlanta University—Examinations and Commencement.
+
+REPORT AND COMMENTS BY A GEORGIA EDITOR.
+
+[_From the Macon Telegraph and Messenger._]
+
+For several days the Board of Visitors, appointed by the Governor
+to the State University, have been diligently attending the
+recitations of the several classes of this colored seat of
+learning, and are greatly pleased with what they have seen.
+
+The pupils are perfectly orderly, well behaved and respectful
+in their demeanor, and not a few are good scholars, and give
+satisfactory evidences of progress.
+
+A large preponderance are of mixed blood, and several would pass
+for white anywhere. There is no perceptible difference, in the
+aptness to learn, between the mulatto and his coal-black associate.
+Perhaps the latter sticks closest to the text-book, and is less
+disposed to investigate. But this may be owing to his superior
+tractability and habits of obedience. Some of the best students,
+male and female, are full-blooded Africans.
+
+They read Greek and Latin, demonstrated problems in mathematics,
+discoursed upon international law and the Constitution, recited
+history, geography and grammar, and, in short, pursued successfully
+the curriculum of our highest schools.
+
+To the questions propounded by the Board, too, they usually gave
+sensible and intelligent replies, showing powers of thought and
+self-reliance not commonly attributed to our colored people.
+Indeed, while it would be wrong to say that the recitations were
+_perfect_, yet it can truly be affirmed that they were highly
+creditable, and compared well with the examinations of our white
+institutions. Again we repeat, the decorum and behavior of the
+entire body of students indicated a most marked improvement, as
+compared with former years, and was unexceptionable.
+
+The teachers are inferior to none in the State for thoroughness,
+patience and skill in imparting knowledge. They possess the
+confidence of the pupils, and, under the wise administration of
+President Ware, everything moves like clockwork, and no serious
+outbreak has ever occurred.
+
+The discipline is mild, but resolute and excellent. We could
+detect, after seven years’ operation, not a stain upon the spotless
+floors, and no pencil defacement or knife-marks upon walls or
+furniture, while, on the contrary, everything was in print
+throughout the building.
+
+There are now in attendance upon the Atlanta University 244
+students in its various classes and departments, as follows:
+Regular College Students—Seniors 4, Juniors 10, Sophomores 3,
+Freshmen 7; total 24. In the Scientific School there are 6
+students; in the Preparatory Department, 37. In the High Normal
+School, 72. In the Normal School proper, 104, and one post-graduate
+student. These sum up 244 pupils, as above stated.
+
+Thirty-seven Alumni have gone forth from the University, _thirty_
+of whom are engaged in teaching, _four_ are ministers or pastors of
+churches, two are mothers of young families, and one has deceased.
+It is a noteworthy fact, also, that every graduate is a professor
+of religion.
+
+The resources of the University are derived from the annual
+appropriation of $8,000 made by the State, the donations of the
+American Missionary Association, amounting in the past year to
+$1,615.28, and one permanent scholarship of $300. Board per month,
+including tuition, room, fuel, lights and washing, is only twelve
+dollars, hardly sufficient to cover bare expenses, and certainly
+not affording one cent of revenue.
+
+The students are required to sign a pledge to abstain from the use
+of liquor and tobacco; they enjoy the advantages of an excellent
+miscellaneous library, which contains some illustrated volumes and
+standard works very rare, and of great value. It was for the most
+part the gift of the late R. R. Graves, Esq., of New York, and
+contains 5,000 volumes.
+
+On Tuesday, His Excellency, General A. H. Colquitt, was pleased
+to spend the morning in attendance upon the examinations of the
+University, and expressed himself highly gratified with the
+progress made by the pupils. At the close of the day’s exercises,
+President Ware invited him to address the assembled school. The
+Governor responded, in one of his emphatic, eloquent, sensible and
+touching talks, which was listened to with breathless attention,
+and repeatedly elicited unbounded applause. His advice to the
+pupils was paternal and faithful, while as a Christian he did not
+fail to point out to them the value and supreme necessity of the
+salvation of their immortal souls. It was an address that reflected
+more credit upon our worthy and popular chief magistrate than the
+grandest oration pronounced before the most august assemblage in
+the land. After he had concluded, several members of the Board of
+Visitors were invited to make remarks. Among those who responded
+were Judge W. D. Harden and Rev. T. G. Pond.
+
+The exercises of the University of Atlanta closed June 27th with
+the usual commencement programme, and the delivery of diplomas and
+certificates to fifteen graduates.
+
+The Lloyd Street Church was probably as closely jammed and
+artistically packed as ever were the contents of a sardine box.
+There were no vacant spaces, no possible squeezing in of another
+auditor, no interstice, window or aisle opening that did not have
+two occupants where one only could be comfortably accommodated. As
+a rule, too, the colored assemblage was well dressed and orderly,
+barring the occasional plaintive wails and impassioned screams of
+sundry pickaninnies who their mothers would insist should have a
+place in the picture.
+
+The writer, unavoidably detained by other duties, did not arrive
+upon the scene until the exercises were considerably advanced.
+Then came the tug of war to reach his associates on the stage. He
+charged two or three times, but was ignominiously repulsed and
+hurled back, like chaff before the wind. But the _bonhommie_ of
+those simple people was excellent, and tumbled and panting for
+breath, your correspondent at length reached the rostrum, and
+obtained a comfortable seat hard by.
+
+It is sufficient to say that those it was our privilege to hear
+acquitted themselves with credit, and their enunciation and
+training as elocutionists evinced much care and skill on the part
+of the teachers of belles lettres in the University.
+
+Some of the graduates, both male and female, are intelligent
+looking young people, and really exhibited powers of original
+thought in their essays and speeches that would have done no
+discredit to any institution in the country. Their manner and
+demeanor, too, was uniformly courteous and unexceptionable, and we
+confess to a very deep interest in their future welfare and career.
+
+It is just as well that our people should at once fully grasp and
+comprehend the problem of the negro’s future. He is a citizen
+both of the United States and of the Commonwealth of Georgia, and
+possessed of equal rights and privileges with the most favored of
+the Anglo Saxon race. No law can be enacted which does not include
+and apply to him, and the freedman is now an essential and integral
+portion of the community. Hence, it should ever be the mission and
+duty of the superior race to treat him kindly, and to spare no
+pains to elevate this new element to its proper place in the body
+politic. They, equally with ourselves, help to make the law-givers
+and rulers of the country, and how can they act intelligently in
+the premises unless educated and duly qualified for the responsible
+trust, which, doubtless, was prematurely and unadvisedly _thrust_
+upon them by the gift of the ballot.
+
+We must deal with circumstances as we find them, and not look
+backward, but forward and upwards. The negro race is a fixture in
+the South and will never die out, either by emigration to Liberia
+or from natural causes. It is susceptible of great improvement, and
+can be made largely conducive to the welfare and prosperity of the
+country.
+
+The exercises over, President Ware, after a short, but singularly
+appropriate address, delivered the diplomas and certificates of
+scholarship to the fifteen graduates, remarking, that as they were
+printed in English they would not be in the predicament of some
+bachelors of arts who could not translate their own Latin diplomas.
+Thus ended the examinations and commencement of the Atlanta
+University.
+
+We cannot, in all candor, pass on without again commending this
+institution to the good will and sympathy of the white people of
+Georgia. It is conducted upon proper and conservative principles.
+Its president and corps of instructors are honest, faithful and
+capable. Its pupils well behaved and exemplary. Its influence, we
+fully believe, will be for good to the African race, and it is to
+be hoped that the State will ever continue to bestow her patronage
+upon a foundation which is doing more than any other to elevate
+and bless the African race, which is destined to form an important
+element in the future politics and government of the country.
+
+       *       *       *       *       *
+
+
+Lewis High School at Macon. Examinations and Entertainments.
+
+MISS ANNETTE LYNCH.
+
+It has been my happy privilege to visit this institution, after an
+absence of two years, and note the progress made by the pupils,
+as shown in the recent examinations and closing exercises of the
+school-year of 1878.
+
+As a former teacher in the school, I was better able to judge
+of that progress than a stranger; and truly, looking back to
+those who were promising pupils then, but in lower classes,
+and seeing so many of them now in the highest class, and doing
+credit to themselves and teachers, is not only gratifying, but
+an encouragement to all who have taken an interest in the work
+here through all its vicissitudes. The school is now under the
+very able management of Rev. M. O. Harrington and wife, with Miss
+L. A. Abbott as assistant, and has ninety-three pupils enrolled.
+It is answering well the purpose of its establishment, viz.: To
+provide for colored pupils at Macon and surrounding places a higher
+education than the common-school, without the expense of going
+elsewhere.
+
+The examinations on the 13th and 14th were listened to by a
+large number of the more intelligent of the colored patrons and
+friends of the school. Members of the press were also present, and
+showed themselves highly pleased. The pupils went through their
+examinations in all their various studies in a manner which showed
+they were perfectly familiar with all they had gone over in their
+text-books. All showed thoroughness and promptness, from the lowest
+to the highest class. Problems in algebra were demonstrated, axioms
+given, translations from Latin and English sentences analyzed and
+parsed, in a manner that did credit to teachers and scholars.
+
+On the night of the 14th, a literary entertainment was given by
+the pupils, which included vocal and instrumental music, with
+essays, declamations, etc. Two allegories, “The Pilgrim’s Choice,”
+and “Light Hearts’ Pilgrimage,” deserve special notice, for not
+only the beautiful manner in which they were rendered, but for the
+life-lessons they taught, and the mental power developed by those
+who had so successfully learned their long and difficult parts.
+The essays, “Missed Lessons,” and “Little by Little,” and “No
+Excellence without Labor,” showed marked ability in the pupils,
+and a strong desire to aim high and persevere in their efforts to
+obtain greater advancement. The quartette singing was listened to
+with almost breathless attention; and, indeed, one could not help
+thinking that here was a band that, with proper training, might
+in time rival the famous Jubilee Singers. I am sure little Miss
+Kitchen, the youngest of the singers, would even now create a
+sensation in any audience; her fearlessly clear, high tones give
+promise of a “star” singer, could she have proper training.
+
+Teachers and scholars deserve great credit for their efforts, and
+their merit is appreciated to that degree that they have been
+called upon to repeat the entertainment on the 17th.
+
+       *       *       *       *       *
+
+
+A Bright Day in Athens.
+
+MR. JOHN MCINTOSH.
+
+May 24th, the closing exercises of my school came off. Between the
+hours of nine and four o’clock, over two hundred persons gathered
+into the Knox’s Institute, to witness the closing exercises and
+a spelling-match between my school and another from a different
+section of the city. Prof. A. Brumby, of the Georgia University,
+and the Mayor of Athens, were present. These distinguished visitors
+remained some hours, and, on leaving, spoke very encouragingly to
+my pupils and patrons. They said that they noticed many indications
+of progress and thoroughness.
+
+Prof. Brumby said he was perfectly astonished, and so were his
+pupils who came with him. He said good work was being done at the
+Knox’s Institute, and he hoped that this work would continue.
+The Mayor said many good things, among which were these words:
+“You are not only being taught lessons in books, but also lessons
+of virtue and morality.” He bade us go on. My school beat in
+the spelling-match, and this encouraged my pupils greatly. The
+Athenians are awake. I shall return the latter part of June to
+labor for three months under the free-school system.
+
+       *       *       *       *       *
+
+
+The Religious Work in Georgia.
+
+REV. F. MARKHAM, SAVANNAH.
+
+The religious work of the A. M. A. in Savannah and the vicinity
+has never been in as prosperous a condition since I have been
+here as at the present. The increase in the congregations and the
+membership has been greater than any previous year.
+
+At Savannah, twenty-four have united with the church; fourteen
+children have been baptized. The Sabbath-school has more than
+doubled in numbers. Over two hundred scholars are enrolled; the
+average attendance is about one hundred and sixty.
+
+Ogeechee Church, which is ten miles from Savannah, has received
+nineteen members. Brother McLean has the confidence and support
+of his people. He is doing a good work in the Sabbath-school.
+His wife is a good worker, and a great help, especially in the
+Sabbath-school. There are about fifty scholars in the school. They
+also teach a day-school and a night-school.
+
+Plymouth Church, at Woodville, three miles west of Savannah, Rev.
+J. H. H. Sengstacke, pastor, has had an interesting work of grace
+in the Sabbath-school. Twenty-eight united with the church, mostly
+from the Sabbath-school, which has about seventy-five scholars. The
+day-school numbers now about fifty; in the winter it had a hundred;
+now the children have to work.
+
+East Savannah is two-and-a-half miles from the city—a little
+village of colored people. A few whites are there, who live by
+selling liquor to the colored people. There are nearly three
+hundred children in that vicinity. The A. M. A., by the assistance
+of a Boston friend, built a little church there. J. H. Stephens,
+a student in my theological class, started a Sabbath-school, and
+preaches to the people. The children are very wild, though some
+have bright intellects, and can make useful men and women; but they
+are as uncultivated as the children in the centre of Africa. It
+is very hard to keep the attention of such children, and secure a
+regular attendance at school. Mrs. Markham and Hattie B. Markham
+and Mr. Floyd have been going out regularly every Sabbath to work
+in the East Savannah Sabbath-school. Sometimes they have had eighty
+or ninety scholars, then only forty or fifty; the average has been
+about sixty.
+
+I can see a decided improvement in the conduct of the scholars.
+They come in and go out orderly, pay better attention, and begin to
+understand what a Sabbath-school is for; when they leave for home,
+they do not make such hideous noises, but go along the street more
+quietly. They have to be taught everything. There are thousands
+upon thousands of children in Georgia in the same condition. We
+hope soon to be able to organize a church at East Savannah, of
+twelve or fifteen members.
+
+Belmont is four miles south-west from Savannah. The church here is
+supplied by Wilson Callen, a very faithful man of God. The church
+suffered here by a bad man, who preached for them, but was last
+year expelled from church. He claims to be a preacher still, and is
+doing what he can to draw the people away. The work is gradually
+improving, both in the church and Sabbath-school.
+
+Louisville, two miles south-west of Savannah, has a church of about
+twenty-five, and a Sabbath-school of about the same number. Brother
+Callen supplies this work also, and is growing in the confidence of
+the people, and his school and congregation are increasing. We hope
+for a revival here.
+
+Midway Church, in Liberty Co., is about thirty miles from
+Savannah; Rev. J. E. Smith, a graduate of Atlanta University, is
+pastor. This church is in a healthy and prosperous state. Since
+Rev. Floyd Snelson left here, to go to Africa, there have been
+added nine members. I hear many encouraging things about Brother
+Smith’s work there. There are now about two hundred and forty
+members. Here is a fine opportunity to do good. The most of the
+people are securing permanent homes. The colored people need to be
+taught to act and think for themselves, and feel responsibility.
+
+There is great need of more help here. The day-school ought to have
+additional help. There is a necessity for a woman of cultivation.
+All mission work is like a child—it must grow or die. I hope the
+people at the North are not willing we shall die.
+
+       *       *       *       *       *
+
+
+ALABAMA.
+
+Two Ordinations at Talladega—How Churches Begin and Grow.
+
+REV. GEO. E. HILL, MARION.
+
+I have just had the pleasure of attending two ordinations of
+colored men, the first of the kind I ever witnessed. These young
+men were recent graduates of Talladega College, and, having only
+last week attended the examinations in the Theological Department
+of this institution, in charge of Prof. Andrews, I was prepared for
+at least a respectable appearance on their part.
+
+But the event exceeded expectation. In the first instance the
+examination of the candidate continued through two hours and was
+very searching and thorough, the council consisting in part of
+three college professors.
+
+The young brother maintained his self-possession, and appeared
+almost as much at home in theology as if he had been a professor
+himself. Indeed, I may say of both these brethren, in all my
+remembrance of ordinations at the North, I have seldom seen a
+candidate for the sacred office appear better on the whole.
+
+It is truly inspiring to behold the work which such a college as
+this is doing for the colored race, not only in providing good
+schools and teachers, but in raising up an intelligent ministry,
+and in planting the right kind of Christian churches.
+
+Here, for example, at A., where we were the other day, there is the
+old established Episcopal Church, for white folks, and, perhaps,
+a colored church or two, where “faith” is more insisted on than
+“works.” A new order now comes in, which is at first looked upon
+with distrust as an innovation. A church is organized with eight
+or ten members. Preaching is statedly kept up by students from
+the college. The congregation steadily increases; and, in three
+years, partly through the exertions of the members, and partly
+by the kindly aid of the “Iron Company,” a neat little chapel is
+built, with a miniature parsonage alongside. A pastor is called,
+and an ordination takes place, conducted with as much solemnity and
+decorum as if it were in the suburbs of New York or Boston. The
+people outside look on. Strangers are attracted in. Distrust gives
+place to respect. The influence is contagious. Shiftlessness and
+immorality have been exchanged for industry and thrift. Society is
+reconstructed. “The tree is known by its fruits.”
+
+May the good work go on, and such trees and such fruit be
+multiplied a thousand fold!
+
+I was grieved to learn that, in the case of one of these young
+pastors, with a wife and child, all the pay he expects to receive
+is fifteen dollars a month from the A. M. A.
+
+       *       *       *       *       *
+
+
+Closing Days of Emerson Institute—Algebra—“Lower ’Strumties” and
+the Ledger.
+
+MISS S. J. IRWIN, MOBILE.
+
+The school at Mobile closed satisfactorily. Public examinations
+were held on the last two days. The interest manifested by the
+attendance of the people was highly gratifying, and as some of
+the examinations were beyond the understanding of the majority of
+the audience, it was noticeable that they should have remained
+during the day at the expense of their dinners, and a number of
+the working men at the expense of a day’s income, in order to show
+their appreciation of what was being done for their children.
+
+There were examinations in all studies pursued during the year; and
+the commendable degree of faithfulness and zeal which has been the
+marked characteristic of the scholars, was evinced at the close.
+
+The advanced grammar-class ended its lesson with the correction,
+on the black-board, of a letter by a colored candidate for office,
+recently published; the class gave rules for its criticisms and
+explanations.
+
+An algebra-class was reported by a Southern lady of high
+intelligence, who had taught that branch for a number of years,
+as the best she ever heard, doing credit to any class or grade of
+scholars.
+
+The exercises of the primary room, also, elicited much comment on
+the careful drill that had been bestowed in the endeavor to convey
+the spirit of study, and not alone the “letter” thereof, although
+the “Busy Bees” were not far in advance of that fundamental
+branch of education. They could readily grasp the _fact_, in the
+physiological lecture, of the different parts of the body, although
+their undeveloped articulation could only pronounce the arms and
+limbs as the “upper” and “lower ’strumties.”
+
+A white gentleman of much educational experience, who has charge of
+an academy for young men, left his own duties to be present during
+the last day; and his final address to the pupils was pleasingly
+commendatory of their progress and attainments.
+
+In his original and epigrammatic manner he told them to go ahead,
+and get beyond these lazy white boys, who liked to have so much
+done for them—for you can do it! He had tried to shame his boys
+before, by telling what the Emerson Institute scholars could do,
+and he surely could now. He concluded, urging them not to forget to
+bring, and the parents to send, the little tuition money which came
+due once in a while, and was so small a recompense for what they
+received.
+
+A paper was read by two of the oldest scholars, entitled “Emerson
+Institute Ledger,” for which the subscription price was readily
+paid, which was announced to be “undivided attention, payable in
+advance.” Some members of the audience offered to pay for the paper
+if it could be regularly issued.
+
+Addresses by ministers and others followed the examinations; the
+school sang “Gathering Home”; the circulars announcing the next
+year’s school-work were distributed; the hope was expressed of
+seeing the familiar faces again after these intervening months of
+vacation; the Lord’s Prayer chanted; the benediction; warm and
+tearful words of farewell between pupils and teachers, and the
+doors closed upon another year’s work.
+
+       *       *       *       *       *
+
+
+MISSISSIPPI.
+
+The Year at Tougaloo University—Results and Reforms.
+
+REV. G. STANLEY POPE, PRINCIPAL.
+
+As we look back over the school-year, we have every reason to feel
+that it has been a successful year.
+
+The health of the teachers has been good; their devotion to the
+work unsurpassed, and their success in the school-room everything
+that could be expected.
+
+The general health of the school has kept up well. There were only
+two serious cases of sickness, and no deaths, for which we are very
+thankful to our protecting Father. None were even obliged to leave
+school on this account.
+
+The attendance from abroad has been much larger than usual, and
+those attending have uniformly been anxious to remain during the
+whole session.
+
+We graduated our first class this year, and there has been quite
+a class spirit developed, so that there is a strong desire on the
+part of the pupils to remain in school and graduate in the classes
+that they are now in.
+
+The religious work has not been marked by as many conversions
+as we had hoped to see; but there has been great progress made
+in Christian activity in certain directions, especially in
+_Sunday-school Work_ and _Temperance Reform_.
+
+The Sabbath before Commencement we spent in Sunday-school
+Convention. Steps were taken to organize a Sunday-school Union,
+which promises to greatly enlarge our usefulness to those in the
+surrounding country. No such work has ever before been undertaken.
+
+In our temperance work we were opposed at the outset by the leading
+students. For some time it looked as though we were not going to
+bring them to the point of taking a stand, even after they were
+brought to see that the people were being ruined by strong drink.
+But the victory was most complete. Students who had to leave before
+the year closed, sent back for pledges. They were hard at work
+in the temperance reform. When school closed, every one who was
+going out to teach, and many others, took pledges, and went out
+enthusiastic to their new field of labor. This seems to us the
+peculiar feature of our work this year outside the school-room.
+
+The work in the school-room has been marked by thoroughness. Gen.
+J. A. Smith, State Superintendent of Education, writes me: “Only
+having attended your exercises one day, I am hardly prepared to
+give anything more than impressions hastily formed. I will say,
+however, those were all favorable. The examinations of the classes,
+so far as I heard them, especially in mathematics, surpassed my
+expectations * * * Judging from the order and system exhibited,
+I was led to believe that the discipline of the institution was
+excellent.”
+
+Nothing could more fitly have followed the instructions of the
+year than Rev. W. S. Alexander’s address, on Commencement Day, on
+“Natural and Acquired Right.” It was full of interest and wise
+application.
+
+       *       *       *       *       *
+
+
+LOUISIANA.
+
+
+“Here am I; Send Me, Send Me.”
+
+_One of many Applications._
+
+                                                _June 24, 1878._
+
+PROF. A. K. SPENCE:
+
+_Dear Sir_—I just received a catalogue from Fisk University, and I
+must frankly express myself as gratified at the noble work that is
+being accomplished by Fisk University.
+
+I am anxious to attend the University so as to prepare myself
+as a missionary to Africa. I have a poor mother, and I am her
+only support, and I know not how I shall ever be able to make
+preparations.
+
+Let me know the provisions made for those preparing to go on
+mission.
+
+I have made quite an advancement in the English branches, but
+desire to pursue the High Normal course proscribed in your
+institute, and also the studies of the theological course.
+
+I feel that I must go to Africa. “Here am I; send me, send me.”
+
+See what can be done for me. I can bring certificates of my
+advancement made, and also of character. I shall patiently wait to
+hear from you, and trust you will not forget me.
+
+    Your brother in Christ,                          F. C. L.
+
+       *       *       *       *       *
+
+
+FROM NEW ORLEANS TO NEW YORK.
+
+REV. W. S. ALEXANDER.
+
+The Commencement season, marking the completion of a year’s work
+and the beginning of welcome and needed rest to the teachers in the
+South, is now well over, and those who have wrought so faithfully
+during the year, are enjoying the quiet of their Northern homes.
+While _en route_ to New York, it was my pleasure to visit several
+of our most prominent institutions, and I shall be glad to speak of
+what I saw. By way of preface, let me say of
+
+
+STRAIGHT UNIVERSITY
+
+that the school-year closed happily and successfully. The
+examinations, which are the best test of scholarship and progress,
+gave great satisfaction to our friends, and the teachers were
+glad and grateful to feel that the year’s work had been a good
+one. We graduated ten young men from the Law Department, of whom
+eight were white, showing the appreciation of the manner in which
+this department is conducted. It is entirely self-supporting,
+the professors accepting the fees of the students as their
+compensation. Next year we anticipate a class of twenty-five.
+We graduated three young ladies from the Academic Department.
+They were superior scholars, and will be successful teachers. At
+our annual exhibition, and at the Commencement exercises on a
+subsequent evening, an audience of 800 were in attendance, to show
+by their presence their deep interest in the prosperity of our
+beloved institution.
+
+Leaving New Orleans on Tuesday evening, June 4th, we were met at
+Jackson, Miss., by Brother Pope, with whom we went to
+
+
+TOUGALOO.
+
+What a delightful location! my first thought was. It does not
+require a great degree of self-denial to spend the winter in such
+a retreat as this. The mission-house is situated in the centre
+of a plantation of five hundred acres, and the approach to it is
+through a superb grove or forest of oaks, festooned with Spanish
+moss. Coming from parched and dry New Orleans, where the sun
+smites so fiercely in midsummer, the country around Tougaloo
+seemed delightfully fresh and cool. I found teachers and pupils
+in the midst of their annual examinations. I was impressed with
+the faithfulness and thoroughness of the instruction given here.
+There was no “coaching” and no prompting, but every student was
+put to a fair test of scholarship and proficiency. The singing
+was an important and interesting feature of Commencement week.
+Tougaloo could send out its troop of Jubilee Singers, who would
+win general favor. Great credit is due to the teachers of
+vocal and instrumental music. The institution, already in such
+good condition, should have, at the earliest day, increased
+accommodations for boarding-scholars, enabling them to receive a
+larger number of mature pupils from all parts of Mississippi. From
+Tougaloo I went to
+
+
+SELMA, ALA.,
+
+for a day only. This is one of the prettiest towns in Alabama.
+The county has a dense negro population, so that the school must
+always have abundant patronage. It was pleasant to find here Mr.
+Silsby, whose father was an efficient worker in the same field many
+years. Mr. Burrell, who is still living, has the great satisfaction
+of knowing that his benevolent gift has been so fruitful of good
+results. I reached
+
+
+TALLADEGA
+
+in time for my appointment on Sunday. This was another surprise
+to me. Situated in the mountain region of Alabama, with a grand
+outlook on every side, with fresh breezes from the hills, and
+with valleys clothed with verdure, it certainly seemed as though
+a Divine hand guided in the choice of this favored site. The
+Baccalaureate sermon by the college pastor, Rev. Mr. Hickox, was
+able and timely. The examinations were full of interest, and
+brought out the real merit of the instruction and the zeal and
+diligence of the students. I was particularly pleased with the
+theological examination conducted by Rev. Mr. Andrews. It covered
+a wide range of study, and showed that the young men had been
+taught to think and reason for themselves. I noticed with great
+satisfaction, in the boarding department, the orderly and polite
+deportment of the seventy-five young men and women who gather three
+times a day in the same dining-hall. It was like a quiet Christian
+family. The training received here will be beyond value, and will
+reach many families in the State. Were a boarding department not
+necessary, it would be very desirable for the culture of manners
+and the direct influence on character of the association of the
+sexes.
+
+
+MEMPHIS.
+
+It was a long and wearisome journey to Tennessee. I was never
+sure of making a railroad connection, as we do on the grand trunk
+lines. Le Moyne Institute has an interesting history. Dr. Le
+Moyne, the noted Cremationist, was the generous benefactor of this
+institution. Without him, it would not now exist. I was too late
+for the examinations, but in time for the Commencement exercises.
+They were held in the pretty Congregational Church, and were
+highly creditable. I found here a company of live, enthusiastic
+teachers. The mission-house is a most home-like place, and it was
+not difficult for me, on inquiring of citizens, to ascertain that
+Le Moyne Institute is thoroughly prized in Memphis. With the same
+corps of teachers as now, they can hardly fail of success. Here, as
+in many other points in the South, dormitories are urgently needed.
+They cannot secure, without them, the best class of students, and
+the school will remain, at best, a High or Normal School, when it
+might be the College, in West Tennessee, for the colored people.
+If some man of Dr. Le Moyne’s generosity would put up a fine
+building for a dormitory, he would be planting seed-corn which
+would yield many harvests in the coming years. A fact which touches
+our hearts at every repetition of it, is that, years ago, during
+the yellow-fever epidemic, two of the teachers heroically remained
+at their posts and ministered to those smitten with the fever, and
+cheerfully paid the forfeit with their lives. Such men and women
+are made of “good stuff,” and the cause they represent has a right
+to popular sympathy and support.
+
+With regard to our general work in the South, I was glad to
+notice everywhere quickened zeal, followed by greatly increased
+prosperity. I believe the good work among the freedmen was never
+so efficient as to-day, and never so richly deserved the hearty
+sympathy and generous benefactions of the good people of the North.
+As it is no time to sound a retreat when an army has gained its
+earliest victories, so it is no time, in the work of education and
+evangelization among the freedmen in the South, to repress zeal
+or to slacken effort, or to retrench where retrenchment would be
+fatal; but to push forward till the highest results are achieved.
+
+       *       *       *       *       *
+
+
+
+
+AFRICA.
+
+       *       *       *       *       *
+
+
+THE MENDI MISSION.
+
+Converts Added to the Church—Death of Mrs. Dr. James.
+
+REV. FLOYD SNELSON, GOOD HOPE.
+
+The church-work is progressing very well. At our last communion,
+the first Sabbath in May, eleven natives united with the church,
+all hopefully converted. It was a great day with us. One of the old
+sisters, who had been here from the beginning, cried out, “Thank
+God! I’ve never seen it so before,” with many other expressions
+of joy. This is the result of steady work. Others are seeking
+admission; but it was thought best that they should wait until
+another opportunity. One child was baptized. Pray that the Lord may
+bless us.
+
+With painful regret I must inform you that Death has entered our
+ranks, and has taken away one of our missionaries—our sister, Mrs.
+James. I wrote you in my last that she and her little daughter
+were unwell. I learned by a letter May 20th from Dr. James (who is
+stationed at Avery), that his wife was seized with a convulsion
+on the morning of Sunday, the 19th, while engaged in her domestic
+business, was taken to her room, and that one convulsion succeeded
+another rapidly, and with such violence that she could not speak,
+until two o’clock in the night, when she died.
+
+Brother Jackson is well again, and he and his wife have returned
+to Avery Station, to resume their work. All are now comparatively
+well, and the work is going on. We feel its importance more and
+more, and we are not discouraged by the fact that one has fallen,
+but will close up our ranks and march forward, hoping to be
+reinforced from time to time, until the victory is won.
+
+       *       *       *       *       *
+
+
+
+
+THE CHINESE.
+
+
+“CALIFORNIA CHINESE MISSION.”
+
+Auxiliary to the American Missionary Association.
+
+  PRESIDENT: Rev. J. K. McLean, D. D. VICE-PRESIDENTS: Rev. A. L.
+  Stone, D. D., Thomas C. Wedderspoon, Esq., Rev. T. K. Noble, Hon.
+  F. F. Low, Rev. I. E. Dwinell, D. D., Hon. Samuel Cross, Rev. S.
+  H. Willey, D. D., Edward P. Flint, Esq., Rev. J. W. Hough, D. D.,
+  Jacob S. Taber, Esq.
+
+  DIRECTORS: Rev. George Moor, D. D., Hon. E. D. Sawyer, Rev. W. E.
+  Ijams, James M. Haven, Esq., Rev. Joseph Rowell, E. P. Sanford,
+  Esq., H. W. Severance, Esq.
+
+  SECRETARY: Rev. W. C. Pond. TREASURER: E. Palache, Esq.
+
+       *       *       *       *       *
+
+
+Items and Incidents.
+
+REV. W. C. POND, SAN FRANCISCO.
+
+STATISTICS.—Our schools have not yet recovered, so far as
+attendance is concerned, from the shock they received through the
+riots of last July. But they are gaining, and should no untoward
+event occur, I hope that before this summer is ended they will
+be as large as ever before—as large, that is, as we can possibly
+sustain without an increase of means. Ten schools are now in
+operation, and seventeen teachers are employed. The aggregate
+number of pupils enrolled May 31st was 467, and the average
+attendance was 242. This is a gain over months preceding, and
+June promises something better still. The total number of Chinese
+who had attended the schools, for a longer or shorter period,
+from September 1st (the commencement of our fiscal year) to May
+31st, was 1,178. Seventy-eight of these pupils give evidence of
+conversion. The whole number whom we have reason to believe have
+been born of God, during the last five years of our work, cannot be
+much less than two hundred.
+
+BAPTISMS.—Six of our pupils were baptized and received to Bethany
+Church, San Francisco, on Sunday, June 2d. This makes the Chinese
+membership of that church number forty-four. These brethren had
+studied diligently the Confession of Faith and the Covenant, which
+they were called publicly to accept, and had approved themselves
+well through their five to eight months of “probation” in our
+“Association of Christian Chinese.” I have no doubt that both
+the Confession and Covenant contained words which they could not
+define; but I have also no doubt that “for substance of doctrine,”
+they assented to the one and consented to the other intelligently,
+honestly and devoutly. I shall never forget the evening I spent
+with them, questioning them as to their views and purposes and
+experiences as Christians. Not one of them but had come out of more
+or less tribulation, into this decided and outspoken Christian
+life. Friends turn their backs upon them and load them with
+reproaches, but they seem to harbor no feeling of resentment—only
+longing to impart to their persecutors the same blessing they have
+found for themselves.
+
+On the same day the first Chinese child of our church was baptized,
+under the “Christian name,” as her father phrased it, of Lily Lee.
+This father was one of the first group of Chinese converts whom it
+was my privilege to receive to the church. He returned to Canton
+about two years since, and sought out, at one of the missions, a
+Christian wife; and so, in his one room in California, he has now
+a Christian home. On the same day, also, Wah Yin was baptized and
+received to the Congregational Church in Petaluma—the first-fruits,
+so far as church membership is concerned, of our mission there. He
+is a very interesting Christian, and has endured hardness, as a
+good soldier. He has been not only reproached, but whipped, by his
+countrymen, for the name of Christ. But he says “it didn’t hurt
+much,” and we should never have known of the fact, but that one who
+took part in it boasted of it openly.
+
+LU LUNE, for nearly a year a missionary helper, was offered by
+his uncle a position as Chinese foreman at the salmon fisheries
+near Collinsville. The work there knows no Sabbath, and the
+Chinese settlement abounds in gambling and opium dens and in petty
+idol shrines. The position was, in a worldly point of view, very
+desirable, but Lu Lune refused to go unless he could have his
+Sabbath, and could be permitted to be just such a Christian there
+as he would be at the mission-house itself. It is a token of Lu
+Lune’s own desirableness that his terms were accepted, and he is
+there, trying, as opportunity offers, to preach Christ, and letting
+the light of a Christian example shine all the while. I may add
+that this is the fourth among the Chinese members of our church
+who has been placed in a position of trust by persons who knew
+nothing and cared nothing about their Christian professions. It is
+a tribute paid to their trustworthiness.
+
+LEE HAIM, recently appointed as a helper, has now been for two
+months in Sacramento. The increase in attendance and interest
+at the school speaks well for his zeal and aptitude. Under his
+influence, the Christian members of the school have rented a small
+building for a sort of Home, and he uses it as a chapel. I will
+quote a few words from his letter of June 6th, correcting his
+English a little, for, while he, like Wong Sam, excels most of his
+countrymen here in knowledge of Chinese, he is also like Wong Sam
+in his trouble with English idioms:
+
+“Now, dear brother, Mr. Pond, I am happy to say to you a few words
+how the mighty God has done to us. He has prepared us a home, and
+leads many Chinese to come to learn the Word of Him, and to study
+your language, also. When the Sabbath-day is come, I am happy to
+go down to preach to them on “I” street, where the Chinese dwell.
+Some of our countrymen very anxious to hear, and some are not. I
+think our congregation of Christian Chinese will become large,
+though I am weak, and no one can help me to take a part on Saturday
+and Sunday evenings. Yet I remember a certain man in Cesarea,
+called Cornelius, had feared God, with all his house, and prayed to
+God always, and then God heard his prayer, and said to him, ‘Thy
+prayers and thine alms are come up for a memorial before God.’—Acts
+x. 18. So I will ask God what we need. Then we receive. Oh, how
+glorious! So I wish you pray for me; so I will pray for you, and
+all your family and teachers.”
+
+AN INDIAN GIFT.—Such gifts were not in good repute in the days of
+my childhood, but for me the name is now redeemed. A venerable
+Presbyterian pastor in the State of New York, who had himself
+previously made a generous donation in aid of our work, writes a
+second time as follows: “After reading the account of your work
+on page 150 of the May number of THE AMERICAN MISSIONARY, at our
+missionary meeting, last evening, an Indian came forward and handed
+me fifty cents for your mission, with tears in his eyes. I hasten
+to enclose his offering, with those of others, making out for you a
+postal order for five dollars.” I know not what others may see in
+this brief epistle, or how others would receive that Indian’s gift;
+but to me it came as something surpassingly sacred. I certainly
+mean to make _every_ donation go as far as possible; but some have
+in them their _par value_—simply that and nothing more. This came
+to me fragrant with incense and wet with tears—a vial full of
+odors, which are the prayers of saints—and to use it except with
+utmost care and earnest supplication seemed like sacrilege.
+
+OUR STOCKTON SCHOOL.—Mrs. M. C. Brown, teacher at Stockton, says:
+“Ah Gun (otherwise Jimmie), one who had gladdened my heart by his
+consecration to Christ, left us December 29th, to go to Oregon. He
+had been a regular attendant at my school for eighteen months, and
+for the last three of his stay, I have every reason to think he was
+a true Christian. Three weeks since came the news that the vessel
+on which he sailed was wrecked, and Jimmie was among the lost. May
+he not even now be singing that song, known only to those who have
+‘washed their robes and made them white in the blood of the Lamb’?
+This is the first ripe grain, so far as I know, gathered from this
+school into the garner of the Good Husbandman.”
+
+       *       *       *       *       *
+
+
+
+
+THE CHILDREN’S PAGE.
+
+
+       *       *       *       *       *
+
+AN UNCONSCIOUS JONAH.
+
+The following correspondence will explain itself. A letter sent
+by mail to buy _Wellsprings_, and enclosing the necessary money
+missed its way, and was brought with waste paper to a mill; there
+it was found by a boy of ten years. The sender of the letter was
+sought out by the boy’s father, and, as a result of it all, the
+money, somewhat increased, has through us purchased _Wellsprings_
+to supply the school at Ogeechee, Ga., for six months. So at last
+this Jonah has arrived at his Nineveh. We think this singular
+discovery and pleasant correspondence has in it several suggestive
+lessons. If some of our young friends will write us what they think
+it teaches, we will be glad to print their suggestions in the next
+MISSIONARY.
+
+
+                                        “N. A., MASS., May 17, 1878.
+
+“Mr. D. O.: _Sir_—The letter written by yourself, which I enclose
+in this, will explain the reason for my wishing to ascertain your
+address. My little boy found the letter, with the money enclosed,
+in the paper-mill in this place, as he was looking among the old
+waste for some fancy scraps of paper. He came to me with it, to
+know what was to be done. I thought it a good opportunity to
+impress upon his mind the value of strict honesty, and told him
+that of course we must try to find the owner. Thus, after being
+tossed about among old rags for nearly two years, the money will if
+not again miscarried, return to its original owner. If the money is
+received, please acknowledge the same.
+
+        “Yours truly,                                      C. R. D.”
+
+
+_The Lost Letter._
+
+                                          “NEW YORK, July 19, 1876.
+
+“MOSES H. SARGENT, ESQ.:
+
+“_Dear Sir_—Enclosed find one and 20/100 dollars. Please send me by
+return (if possible) the value in _Wellsprings_—the latest issue. I
+want to use them next Sabbath.
+
+        “Yours very truly,                                    D. O.”
+
+
+                                            “NEW YORK, May 20, 1878.
+
+“Mr. C. R. D.: _Dear Sir_—Yours of the 17th, with the money
+enclosed, reached me, for which please accept my best thanks.
+
+“Due inquiries for the letter were made at the post-office here at
+the time, but without success, and of course I concluded that it
+had been opened and money stolen by some post office official. Even
+now there is some mystery, which perhaps might be removed if the
+(original) envelope could be found.
+
+“The amount at the time was designed for a good cause, in
+connection with Sunday-school work, and I feel, after what has
+happened, that the Lord, having delivered it from the jaws of the
+paper mill, has an additional claim upon it, and so I propose that
+your little boy (with your help, if necessary) name an object to
+which he would like it applied.
+
+“Jonah, when appointed to do certain work, was disobedient and,
+you know, soon found himself in the ‘fish’s belly.’ From this
+uncomfortable situation, however, he was soon delivered, and _one
+more_ opportunity given him to obey orders—with better results.
+Now, suppose we call our dollar and twenty cents the _disobedient
+Jonah_, and our little friend the _fish_; and now that our Jonah
+has landed safely, suppose we give him one more opportunity for
+obeying his orders?
+
+“Please say to my little friend that I appreciate what he has done
+in this matter, and congratulate the son on having a good adviser,
+and the father on having a son inclined to take good advice.
+
+“Should you reply to this note, please give me the boy’s name and
+age, and photograph likeness if you have one.
+
+        “Yours respectfully and truly,                        D. O.”
+
+
+                                        “N. A., MASS., May 25, 1878.
+
+“Mr. D. O.: _Dear Sir_—Your very happy acknowledgement of the
+receipt of that money (or I might, say, of that ‘Jonah’), which
+went so far astray from the first direction given to it, was duly
+received, and the reaching of it listened to by our little boy, or
+the ‘fish’ with much delight.
+
+“Our son’s name is Edwin H. He is ten years of age. He is quite
+pleased that the money is going to be used to do missionary
+work and that you have given him the privilege of deciding what
+direction it shall take in starting on a second trip.
+
+“Now, Eddie thinks that if this Jonah has not done the work which
+he was first directed, and has had such a wonderful escape from
+a terrible death, that, he can do no better than to follow the
+directions given to the Prophet Jonah, who was saved by a much
+bigger ‘fish’ than himself, and those directions are found in Jonah
+iii. 2, viz.: ‘Arise; go unto Nineveh, that great city, and preach
+unto it the preaching that I bid thee.’ Therefore, this Jonah must
+go and sell himself for as many good little papers as he can, and
+be distributed among the little boys and girls of some mission
+Sunday-school; and may the good resulting be proportionate to that
+accomplished by Jonah of old.
+
+“We have no recently-taken photograph, but such as we have I
+enclose, in compliance with your request.
+
+        “Yours very truly,                                 C. R. D.”
+
+       *       *       *       *       *
+
+
+
+
+RECEIPTS
+
+FOR JUNE, 1878.
+
+
+       *       *       *       *       *
+
+  MAINE, $7.42.
+
+    Hampden. Cong. Ch.                                         5.32
+    Waterford. Cong. Sab. Sch. $1.60; Mrs. C. D.
+      50c.                                                     2.10
+
+
+  NEW HAMPSHIRE, $128.36.
+
+    Amherst. S. C. A. and S. E. A. 50c. ea., _for
+      Memorial Inst., Wilmington, N. C._                       1.00
+    Candia. Cong. Ch. and Soc.                                17.37
+    Canterbury. Cong. Ch. and Soc.                            13.75
+    Chester. Miss C. S. G.                                     0.25
+    Gilsum. Cong. Ch. and Soc. $16.25; Cong. Sab.
+      Sch. $8.85; Dea. A. M. K. $1                            26.10
+    Lyme. Cong. Ch. and Soc. (ad’l)                            2.00
+    Nashua. Dea. James Hartshorn, _for Memorial
+      Inst., Wilmington, N. C._                               10.00
+    Pembroke. Cong. Ch. and Soc.                              32.39
+    Short Falls. J. W. C.                                      1.00
+    Wakefield. Cong. Ch. and Soc.                              8.50
+    Webster. Cong. Ch. and Soc.                               16.00
+
+
+  VERMONT, $194.89.
+
+    Bellows Falls. Cong. Ch. and Soc.                         18.38
+    Brownington. Dea. Wm. Spencer                              5.00
+    Cornwall. Cong. Ch. and Soc.                              45.34
+    Danby. Cong. Sab. Sch.                                     2.16
+    Danville. Cong. Sab. Sch.                                  8.44
+    Essex Centre. Cong. Ch. and Soc.                           6.00
+    Fayetteville. Individuals by A. Birchard                   1.00
+    Greensborough. R. E. Crane                                 5.00
+    Jericho. Mrs. Lucy Spaulding $10; C. H. L. $1             11.00
+    Norwich. Cong. Ch. and Soc.                               10.00
+    Orwell. Cong. Ch. and Soc.                                26.20
+    St. Johnsbury. North Cong. Ch.                             8.00
+    Salisbury. Cong. Ch. and Soc.                              7.82
+    Swanton. Cong. Ch. and Soc.                               25.00
+    Wallingford. By Ettie A. Ballou $1.25, and bbl
+      of C.                                                    1.25
+    Westminster, West. Mission Band by Nellie
+      Houghton, Treas.                                         6.00
+    Windham. Cong. Sab. Sch. $6.30; H. N.
+      Prentiss, $2.00                                          8.30
+
+
+  MASSACHUSETTS, $3,070.47.
+
+    Amesbury and Salisbury Mills. Cong. Ch. Miss.
+      and Sab. Sch. Concerts                                  11.00
+    Amherst. William M. Graves                                20.00
+    Andover. Joseph W. Smith, _for Telescope,
+      Atlanta U._                                             20.00
+    Ashby. Rev. Mr. S., _for Memorial Inst.
+      Wilmington, N. C._                                       1.00
+    Athol. H. G.                                               0.50
+    Attleborough. Second Cong. Ch. and Soc.                   82.04
+    Ayer. Mrs. E. A. Spaulding, _for Student Aid,
+      Talladega C._                                           70.00
+    Belchertown. Mrs. Agnes M. Knowlton                        2.00
+    Beverly. Dane St. Sab. Sch.                               20.09
+    Boston. Old South Cong. Ch. and Soc.
+      $218,—Park St. Sab. Sch. $50, _for Student
+      Aid, Atlanta U.;_ “A Friend” $25, _for
+      Telescope, Atlanta U.;_ Mrs. Collins $5                298.00
+    Boxford. Sab. Sch. $20; and “Friends” $14.75,
+      _for Ind. Sch., Talladega_                              34.75
+    Bradford. Mrs. Sarah C. Boyd, _for Student
+      Aid, Atlanta U._                                        15.00
+    Cambridgeport. Ladies’ Aux. of Pilgrim Ch. 2
+      bbls. of C.
+    Chicopee. Second Cong. Ch. and Soc.                       19.46
+    Clinton. First Evan. Cong. Ch. and Soc.                  100.00
+    Dana. Cong. Ch. and Soc.                                   1.50
+    Dover. H. H. F.                                            0.50
+    Easthampton. Payson Cong. Sab. Sch.                       50.00
+    East Weymouth. Cong. Ch. and Soc.                         15.00
+    Enfield. Cong. Ch. and Soc.                              100.00
+    Falmouth. ESTATE of Lucy Lawrence, by Silas
+      Jones                                                  300.00
+    Fitchburg. J. A. Conn, _for a Student, Atlanta
+      U._                                                     50.00
+    Foxborough. Mrs. Polly Hartshorn                           5.00
+    Georgetown. “A Friend”                                     5.00
+    Granville Corners. C. Holcomb                              5.00
+    Groton. Union Cong. Ch. and Soc.                          11.50
+    Hanover. First Cong. Ch. and Soc.                          3.70
+    Harwich Port. Rev. J. R. Munsell                           2.00
+    Hawley. “A Friend”                                         2.00
+    Holliston. Cong. Ch. and Soc. $48.28; “Ladies’
+      Bible-Class” Cong. Ch. $25, by J. Batchelder            73.28
+    Haydenville. Cong. Ch. and Soc.                           11.00
+    Lawrence. South Cong. Ch. and Soc.                        21.00
+    Leicester First Cong. Ch. and Soc.
+      $21.46.—Mrs. N. $1, _for Memorial Inst.,
+      Wilmington, N. C._                                      22.46
+    Lowell. Kirk St. Cong. Ch. and Soc. $50;
+      Elliot Cong. Ch. by J. G. B. $25                        75.00
+    Lynnfield Centre. Cong. Ch. and Soc.                      12.10
+    Marlborough. Union Cong. Ch. and Soc.                     65.00
+    Medford. Dea. Galen James                                700.00
+    Natick. First Cong. Sab. Sch., _for bell for
+      First Cong. Ch., Atlanta, Ga._                          25.00
+    Newbury. North Cong. Ch. and Soc. $27.52;
+      First Cong. Ch. and Soc. $19.18                         46.70
+    Newburyport. Whitfield Cong. Ch.                          10.73
+    Northampton. “A Friend.”                                 150.00
+    Otis. Rev. J. C. S.                                        0.50
+    Palmer. Second Cong. Ch. and Soc.                         12.66
+    Petersham. Cong. Ch. and Soc.                              4.25
+    Rockdale Mills. Housatonic Cong. Ch.                      39.58
+    Salem. Joseph H. Towne $100; A. P. $1                    101.00
+    Saxonville. Edward’s Ch. and Sab. Sch.                    30.00
+    Scituate. Cong. Sab. Sch.                                  4.93
+    Somerville. Infant-Class of Franklin St. Ch.               8.75
+    Southampton. “A Friend,” by Miss J. E. Strong              3.00
+    South Amherst. Cong. Ch. and Soc.                         10.00
+    South Braintree. Miss R. A. Faxon, _for
+      Student Aid, Atlanta U._                                 5.00
+    South Hadley. Members Mt. Holyoke Fem. Sem.               18.70
+    South Weymouth. Union Cong. Ch. (ad’l)                     5.00
+    Springfield. “E. M. P.,” South Ch.                        20.00
+    Stoneham. Cong. Ch. and Soc.                              15.68
+    Topsfield. ESTATE of Mrs. R. C. Towne, _for
+      Student Aid_                                           100.00
+    Townsend. Cong. Ch. and Soc.                              13.00
+    Uxbridge. Mrs. Ellis                                       2.00
+    Wakefield. Mrs. A. S.                                      0.25
+    Walpole. Mrs. C. F. Metcalf                                5.00
+    Warren. First Cong. Ch. and Soc., to const.
+      DEA. M. W. FAY and MRS. E. H. HITCHCOCK, L.
+      M.’s                                                    63.20
+    Watertown. Ladies of Phillips’ Ch. 2 bbls. of
+      C., _for Wilmington, N. C._
+    West Boylston. Polly W. Ames and Geo. W. Ames
+      $3 ea.                                                   6.00
+    Westminster. Ladies’ Sew. Soc. $5 and bbl. of
+      C., _for Ind. Sch., Talladega_                           5.00
+    West Hampton. Cong. Ch. and Soc.                          15.00
+    West Springfield. Park St. Ch.                            12.07
+    Winchendon. Atlanta Soc., _for Student Aid,
+      Atlanta U._                                             48.00
+    Worcester. Union Cong. Ch.                                64.59
+
+
+  RHODE ISLAND, $370.23.
+
+    Central Falls. Cong. Ch.                                 370.23
+
+
+  CONNECTICUT, $2,227.12.
+
+    Bloomfield. Mrs. Sally Gillett, to const. AMY
+      MARTHA HODGES L. M.                                     30.00
+    Bristol. Miss. Soc., _for Ind Sch., Talladega_            20.00
+    Colchester. First Cong. Ch. and Soc. $83.60,
+      and Sab. Sch. $2.86                                     86.46
+    Columbia. Cong. Ch. and Soc                               15.09
+    East Haddam. First Cong. Ch. and Soc.                     46.15
+    Greenville. Miss C. Gordon and Miss Ayer, _for
+      Student Aid, Atlanta U._                                15.00
+    Hartford. Centre Ch.                                     690.58
+    Kent. Cong. Sab. Sch., _for Fisk U._                      36.00
+    Lakeville. “A Friend” $20, _for a Student,
+      Fisk U._—Mrs. M. A. H. 51c.                             20.51
+    Lyme. Rev. E. F. Burr                                     20.00
+    Manchester. ——, _for Ind. Sch., Talladega_                12.50
+    Meriden. E. E. Leonard                                     5.00
+    Middletown. Third Cong. Ch. $30, to const.
+      DEA. GEO. W. BOARDMAN L. M.; Mrs. L. C.
+      Birdsey $5                                              35.00
+    Newington. Cong. Ch. and Soc.                             19.70
+    New Haven. College St. Ch. $40; Third Cong.
+      Ch. 29.07                                               69.07
+    New London. Trust ESTATE of Henry P. Haven
+      ($100 of which for _Hampton N. and A. Inst._)          300.00
+    New London. Mrs. J. A. R.                                  1.00
+    Norfolk. Cong. Ch. to const. ABEL CAMP, JOHN K.
+      SHEPARD and MRS. H. H. RIGGS L. M’s                    100.00
+    North Coventry. Cong. Ch.                                 25.11
+    Norwich. Mrs. Chas. Lee, _for Teachers_, and
+      to const. MRS. M. A. GROSVENOR L. M.                    30.00
+    Plainfield. Cong. Sab. Sch.                                2.50
+    Pomfret. First Cong. Ch. 2 bbls C., _for New
+      Orleans, La._
+    Putnam. Mrs. M. A. Keith                                   2.00
+    Rockville. Cong. Ch.                                      79.20
+    Scotland. Cong. Ch.                                       15.00
+    Simsbury. Miss J. T. C., _for Atlanta U._                  1.00
+    Somersville. Cong. Ch.                                    35.66
+    Suffield. First Cong. Ch. and Soc                         15.40
+    Thomaston. ESTATE of Henry Brooks by J. K.
+      Brooks, Ex’r.                                          336.90
+    Thomaston. Cong. Ch.                                      39.60
+    Tolland. Cong. Ch.                                         8.26
+    Unionville. Cong. Ch., _for Talladega C._                 27.43
+    Woodstock. “Friends,” _for Ind. Sch.,
+      Talladega_                                              10.00
+    Westport. A. Warren $5; Mrs. A. Warren $2                  7.00
+    West Winsted. Mrs. J. C. Stillman                         10.00
+    Windsor. Cong. Ch.                                        50.00
+    ——. Rev. E. E. Rogers, _for Student Aid,
+      Atlanta U._                                             10.00
+
+
+  NEW YORK, $217.18
+
+    Amsterdam. C. Bartlett                                    10.00
+    Berkshire. Cong. Ch.                                      15.00
+    Binghamton. Sheldon Warner                                10.00
+    Brooklyn, E. D. New England Cong. Ch.                     22.39
+    Jamestown. J. L. Hall $5; Mrs. J. L. Hall $2               7.00
+    Middletown. Samuel Ayres $3, _for Home M. and
+      $1 for Foreign M._                                       4.00
+    New York. Mrs. Caroline P. Stokes, $50, _for
+      Ind. Sch., Talladega_.—“Pilgrim Band,”
+      Broadway Tabernacle, $7.29, _for a Student,
+      Fisk U._                                                57.29
+    Oneida. Stephen H. Goodwin                                80.00
+    Oswego. Miss H. E. S.                                      0.50
+    Warsaw. “A Friend”                                         4.00
+    West Yaphank. H. M. Overton                                6.00
+    Windsor. Mrs. J. W.                                        1.00
+
+
+  NEW JERSEY, $108.16.
+
+    Bound Brook. Cong. Ch.                                    16.00
+    Jersey City. First Cong. Ch. $61.66.—Sab. Sch.
+      Tabernacle Cong. Ch. $30, _for Student Aid,
+      Fisk U._                                                91.66
+    Newark. Mrs. G. E. S.                                      0.50
+
+
+  PENNSYLVANIA, $57.36.
+
+    Canton. H. Sheldon                                         5.00
+    Gibson. “A Friend” $16.11; Miss B. C. 25c.                16.36
+    Oxford. Rev. E. W.                                         1.00
+    Philadelphia. Miss M. A. Longstreth, _for
+      Student Aid, Atlanta U._                                25.00
+    West Alexander. ——.                                       10.00
+
+
+  OHIO, $935.21.
+
+    Ashtabula. James Hall                                      5.00
+    Atwater. Cong. Ch. and Soc.                               14.69
+    Brighton. Cong.                                            4.26
+    Chardon. Cong. Soc. $3 and bbl. of C., _for
+      Ind. Sch., Talladega_                                    3.00
+    Cardington. R. H                                           0.50
+    Delphos. M. D. J.                                          1.00
+    Gomer. Welch Cong. Ch.                                    52.25
+    Huntsburg. Bbl. of C. and $2, _for Ind. Sch.,
+      Talladega_                                               2.00
+    Madison. Cong. Ch., _for Student Aid, Tougaloo
+      U._                                                     45.00
+    Marysville. Sab. Sch., _for Ind. Sch.,
+      Talladega_                                               4.30
+    Marietta. First Cong. Ch.                                 83.50
+    Mount Vernon. Cong. Ch.                                   81.50
+    Plymouth. ESTATE of Henry Amerman, by A. L.
+      Grimes                                                 600.00
+    South Newbury. Ladies’ Soc., _for Ind. Sch.,
+      Talladega_                                               3.06
+    Tallmage. Cong. Ch. and Soc. $25.15; Rev. L.
+      Shaw $10                                                35.15
+
+
+  INDIANA, 25c.
+
+    Elletsville. J. A. R.                                      0.25
+
+
+  ILLINOIS, $1,046.80.
+
+    Cobden. E. W. Towne, _for Student Aid, Fisk U._           10.00
+    Chicago. C. G. Hammond $50, _for Student Aid,
+      Fisk U._—Lincoln Park Ch. $27.75                        77.75
+    Elgin. Sab. Sch. of Cong. Ch., _for Student
+      Aid, Fisk U._                                           25.00
+    Farmington. Cong. Ch. $85.06.—Sab. Sch. and
+      Individuals in Cong. Ch. $25, _for Student
+      Aid, Fisk U._                                          110.06
+    Geneseo. Mr. and Mrs. N. B. Huntington $27,
+      _for Student Aid, Fisk U._—Mrs. E. L.
+      Atkinson $5.—J. T. A. 50c., _for Mag._                  32.50
+    Homer. Cong. Ch.                                          15.46
+    Hennepin. Cong. Ch.                                        7.42
+    Ivanhoe. G. B.                                             1.00
+    Jacksonville. Sab. Sch. of Cong. Ch., _for
+      Student Aid, Fisk U._                                   20.00
+    Kewanee. Woman’s Miss. Soc. and Cong. Ch. $15
+      and bbl. of C., by Mrs. C. C. Cully, _for
+      Ind. Sch., Talladega_                                   15.00
+    La Harpe. “A Friend”                                       1.00
+    Lake Forest. Mrs. W. H. Ferry, _for Student
+      Aid, Fisk U._                                           20.00
+    La Salle. Sab. Sch. of Cong. Ch., _for Student
+      Aid, Fisk U._                                           12.50
+    Lockport. Cong. Ch.                                       14.00
+    Lyonsville. Cong. Ch.                                     16.64
+    Oak Park. “A Friend” $10; Cong. Ch. (in part)
+      $3.50                                                   13.50
+    Ottawa. Cong. Ch.                                         33.65
+    Peru. Rev. G. S. B.                                        0.50
+    Polo. Robert Smith                                       500.00
+    Princeton. Cong. Ch.                                      42.62
+    Providence. Cong. Sab. Sch.                                5.00
+    Port Byron. Ladies’ Miss. Soc.                             8.00
+    Rockford. Ladies of First Cong. Ch., _for a
+      Student, Talladega_                                     12.00
+    St. Charles. Cong. Ch.                                    24.70
+    Waupannsee Grove. Cong. Ch.                               16.00
+    Woodstock. First Cong. Ch.                                12.00
+    Willmette. C. A. V.                                        0.50
+
+
+  MICHIGAN, $240.
+
+    Adair. Henry Topping                                       5.00
+    Adrian. A. J. Hood $10, _for Freedmen, Indian
+      and Chinese M._—C. C. Spooner $5                        15.00
+    Almont. Mrs. H. G., _for a Missionary,
+      Memphis, Tenn._                                          1.00
+    Benzonia. First Cong. Soc.                                16.00
+    Covert. A. S. Packard $50, and Sab. Sch. of
+      Cong. Ch. $50, _for Student Aid, Fisk U._;
+      W. J. C. 50c                                           100.50
+    Homestead. Cong. Ch.                                       5.00
+    Kalamazoo. Sab. Sch. of Cong. Ch., _for
+      Student Aid, Fisk U._                                   25.00
+    Marshall. D. A. Miller                                     5.00
+    Northville. D. Pomeroy                                     5.00
+    Owasso. Sab. Sch. of Cong. Ch., _for Student
+      Aid, Fisk U._                                           50.00
+    Romeo. Ladies of Cong. Soc. $5, _for a
+      Missionary, Memphis, Tenn._                              5.00
+    Summit. Cong. Ch.                                          7.50
+
+
+  WISCONSIN, $64.92.
+
+    Beloit. Mrs. S. W. Clary $10, _for Byron,
+      Ga._; A. W. H. $1                                       11.00
+    Bloomington. Cong. Ch.                                     6.02
+    Boscobel. Cong. Ch.                                        5.00
+    Brandon. Cong. Sab. Sch., _for Tougaloo U._                4.00
+    Durand. Sab. Sch. Class                                    1.40
+    Hammond. Cong. Ch.                                         2.00
+    Racine. Individuals First Presb. Ch. $10; Mrs.
+      R. B. M. 50c                                            10.50
+    Windsor. H. H. S.                                          0.50
+    Warren. Cong. Ch. (ad’l)                                   2.00
+    Waukesha. Sab. Sch. of Cong. Ch., _for Student
+      Aid, Fisk U._                                           10.00
+    Wauwatosa. Cong. Ch. (ad’l)                               12.50
+
+
+  IOWA, $60.93.
+
+    Atlantic. Cong. Sab. Sch.                                  6.00
+    Dubuque. Cong. Ch.                                        14.80
+    Des Moines. Ladies’ Miss. Soc. of Cong. Ch.,
+      _for Student Aid, Fisk U._                              10.00
+    Glenwood. Rev. L. S. Williams                              5.00
+    Leon, J. K., _for New Building, Tougaloo U._               1.00
+    New Hampton. Ladies’ Miss. Soc., _for Girls’
+      Ind. Sch., Talladega_                                    1.00
+    Osage. Sab Sch. of Cong. Ch., _for Student
+      Aid, Fisk U._                                            9.13
+    Stacyville. Woman’s Miss. Soc.                             4.00
+    Waterloo. Rev. M. K. Cross                                10.00
+
+
+  MINNESOTA, $113.40.
+
+    Marine Mills. Cong. Ch.                                    2.38
+    Minneapolis. Plymouth Ch. $28.97.—Rev. H. A.
+      Stimpson, $10, _for Telescope, Atlanta U._              38.97
+    St. Paul. Chas. B. Newcomb, _for Telescope,
+      Atlanta U._                                             25.00
+    St. Peter. Mrs. Jane A. Treadwell                          4.00
+    Princeton. Cong. Sab. Sch. (proceeds of
+      Concert)                                                18.05
+    Winona. Sab. Sch. of Cong. Ch., _for Student
+      Aid, Fisk U._                                           25.00
+
+
+  KANSAS, $19.83.
+
+    Bavaria. Cong. Ch. $3.33; A. M. 50c                        3.83
+    Brookville. Cong. Ch. $15; Mrs. E. S. and W.
+      G. 50c. ea.                                             16.00
+
+
+  NEBRASKA, $1.00.
+
+    Nebraska City. K. U. S. S. Class, _for Cal.
+      Chinese M._                                              1.00
+
+
+  ARKANSAS, 51c.
+
+    Little Rock. M. J. H.                                      0.51
+
+
+  COLORADO $33.47
+
+    Colorado Springs. Cong. Ch.                               33.47
+
+
+  CALIFORNIA, $142.20.
+
+    Rohnerville. J. T.                                         0.50
+    Santa Cruz. Pliny Fay                                     10.00
+    San Francisco. Receipts of the California
+      Chinese Mission                                        131.70
+
+
+  OREGON, $7.
+
+    Forest Grove. Cong. Ch.                                    7.00
+
+
+  WASHINGTON TERRITORY, $3.80.
+
+    White River. Cong. Ch.                                     3.80
+
+
+  TENNESSEE, $429.65.
+
+    Memphis. Le Moyne Sch. $148.45.—Cong. Ch. Sab.
+      Sch. $12, _for Mendi M._                               160.45
+    Nashville. Fisk University                               269.20
+
+
+  NORTH CAROLINA, $197.94.
+
+    Wilmington. “Friends” $77.50, by Miss E. A.
+      Warner, _for Memorial Inst._—Normal Sch.
+      $106.25; First Cong. Ch. $6.85—Miss Maria
+      Smith, _for Memorial Inst._ $2                         192.60
+    Woodbridge. Tuition                                        5.34
+
+
+  SOUTH CAROLINA, $220.00.
+
+    Charleston. Avery Inst.                                  220.00
+
+
+  ALABAMA, $192.15.
+
+    Athens. Trinity Sch.                                      52.75
+    Florence. L. C. A.                                         0.50
+    Mobile. Emerson Inst. $90.55; Rev. Wm. H. A.
+      and M. G. 50c. ea.                                      91.55
+    Selma. First Cong. Ch. $6.60.—E. C. Silsby $5,
+      _for Student Aid, Tougaloo U._                          11.60
+    Talladega. Talladega College                              35.75
+
+
+  GEORGIA, $477.09.
+
+    Atlanta. Atlanta U. $74.—Prof. T. N. Chase
+      $50. _for Student Aid, Atlanta U._                     124.00
+    Macon. Lewis High Sch.                                    44.25
+    Savannah. Beach Inst. $296.70; Cong. Ch. $7.64
+      and Sab. Sch. $3.50                                    307.84
+    Woodville. Plymouth Ch.                                    1.00
+
+
+  LOUISIANA, $422.50.
+
+    New Orleans. Straight University $214; Central
+      Ch. $208; Rev. H. A. R. 50c                            422.50
+
+
+  MISSISSIPPI, $63.35.
+
+    Tougaloo. Tougaloo U. $43.35.—Rev. G. S. Pope
+      $20, _for Student Aid_                                  63.35
+
+
+  MISSOURI. $10.15.
+
+    Brookfield. Cong. Ch.                                      5.15
+    Index. P. M. Wells                                         5.00
+
+
+  ENGLAND, $24.35.
+
+    Bishop Auckland. Joseph Lingford                          24.35
+
+
+  SCOTLAND, $97.80.
+
+    Perth. North United Presb. Ch. £18.—J. Balman,
+      _for Cal. Chinese M._ £2, by D. Morton                  97.80
+                                                         ——————————
+    Total                                                 11,185.49
+    Total from Oct. 1st to June 30th                    $129,307.75
+
+                                   H. W. HUBBARD, _Ass’t Treas._
+
+  RECEIVED FOR DEBT.
+
+    —— N. H. “A Friend”                                      100.00
+    —— Vt. “A Friend”                                        100.00
+    Norwich, Conn. Miss. S. Mace                              20.00
+    Rockville, Conn. J. N. Stickney                           25.00
+    West Meriden, Conn. Edmund Tuttle, to const.
+      CHARLES L. MERRIAM, L. M.                               30.00
+    New York, N. Y. Stephen T. Gordon                        100.00
+    Benzonia, Mich. Mrs. S. A. B. C.                           1.00
+    Detroit, Mich. Rev. F. T. Bayley                          15.00
+    Streator, Ill. Hon. Samuel Plumb                         250.00
+    Kilmarnock, Scotland. John Galloway                    1,000.00
+                                                          —————————
+                                                           1,641.00
+    Previously acknowledged May Receipts                  10,522.72
+                                                          —————————
+    Total                                                $12,163.72
+
+
+Receipts of the CALIFORNIA CHINESE MISSION, (E. Palache, Treas.)
+from March 21 to June 20, 1878:
+
+
+  FROM AUXILIARIES, $17.10.
+
+    Petaluma Chinese Mission. Chinese                          8.10
+    Stockton Chinese Mission. Mrs. M. C. Brown $3;
+      Wm. Saunders $1; A. Van R. Paterson $1;
+      Chinese $4                                               9.00
+
+
+  FROM CHURCHES, $59.60.
+
+    San Francisco. First Cong. Ch.                            44.35
+    Bethany. Church (in part)                                 15.25
+
+
+  FROM EASTERN FRIENDS, $55.
+
+    Bangor, Me. Mrs. E. R. Burpee, _for Barnes’
+      Mission House_                                          25.00
+    Lake George, N. Y. Rev. H. S. Huntington $25;
+      Other friends $5                                        30.00
+                                                             ——————
+    Total                                                   $131.70
+
+       *       *       *       *       *
+
+
+
+
+Constitution of the American Missionary Association.
+
+INCORPORATED JANUARY 30, 1849.
+
+
+       *       *       *       *       *
+
+ART. I. This Society shall be called “THE AMERICAN MISSIONARY
+ASSOCIATION.”
+
+ART. II. The object of this Association shall be to conduct
+Christian missionary and educational operations, and diffuse a
+knowledge of the Holy Scriptures in our own and other countries
+which are destitute of them, or which present open and urgent
+fields of effort.
+
+ART. III. Any person of evangelical sentiments,[A] who professes
+faith in the Lord Jesus Christ, who is not a slaveholder, or in the
+practice of other immoralities, and who contributes to the funds,
+may become a member of the Society; and by the payment of thirty
+dollars, a life member; provided, that children and others who have
+not professed their faith may be constituted life members without
+the privilege of voting.
+
+ART. IV. This Society shall meet annually, in the month of
+September, October or November, for the election of officers and
+the transaction of other business at such time and place as shall
+be designated by the Executive Committee.
+
+ART. V. The annual meeting shall be constituted of the regular
+officers and members of the Society at the time of such meeting,
+and of delegates from churches, local missionary societies,
+and other co-operating bodies—each body being entitled to one
+representative.
+
+ART. VI. The officers of the Society shall be a President, Vice
+Presidents, a Recording Secretary, Corresponding Secretaries,
+Treasurer, two Auditors, and an Executive Committee of not less
+than twelve, of which the Corresponding Secretaries shall be
+advisory, and the Treasurer ex-officio, members.
+
+ART. VII. To the Executive Committee shall belong the collecting
+and disbursing of funds; the appointing, counselling, sustaining
+and dismissing (for just and sufficient reasons) missionaries and
+agents; the selection of missionary fields; and, in general, the
+transaction of all such business as usually appertains to the
+executive committees of missionary and other benevolent societies;
+the Committee to exercise no ecclesiastical jurisdiction over the
+missionaries; and its doings to be subject always to the revision
+of the annual meeting, which shall, by a reference mutually
+chosen, always entertain the complaints of any aggrieved agent or
+missionary; and the decision of such reference shall be final.
+
+The Executive Committee shall have authority to fill all vacancies
+occurring among the officers between the regular annual meetings;
+to apply, if they see fit, to any State Legislature for acts of
+incorporation; to fix the compensation, where any is given, of all
+officers, agents, missionaries, or others in the employment of the
+Society; to make provision, if any, for disabled missionaries, and
+for the widows and children of such as are deceased; and to call,
+in all parts of the country, at their discretion, special and
+general conventions of the friends of missions, with a view to the
+diffusion of the missionary spirit, and the general and vigorous
+promotion of the missionary work.
+
+Five members of the Committee shall constitute a quorum for
+transacting business.
+
+ART. VIII. This society, in collecting funds, in appointing
+officers, agents and missionaries, and in selecting fields
+of labor, and conducting the missionary work, will endeavor
+particularly to discountenance slavery, by refusing to receive the
+known fruits of unrequited labor, or to welcome to its employment
+those who hold their fellow-beings as slaves.
+
+ART. IX. Missionary bodies, churches or individuals agreeing to
+the principles of this Society, and wishing to appoint and sustain
+missionaries of their own, shall be entitled to do so through the
+agency of the Executive Committee, on terms mutually agreed upon.
+
+ART. X. No amendment shall be made in this Constitution without
+the concurrence of two thirds of the members present at a regular
+annual meeting; nor unless the proposed amendment has been
+submitted to a previous meeting, or to the Executive Committee in
+season to be published by them (as it shall be their duty to do, if
+so submitted) in the regular official notifications of the meeting.
+
+FOOTNOTE:
+
+[A] By evangelical sentiments, we understand, among others, a
+belief in the guilty and lost condition of all men without a
+Saviour; the Supreme Deity, Incarnation and Atoning Sacrifice
+of Jesus Christ, the only Saviour of the world; the necessity
+of regeneration by the Holy Spirit, repentance, faith and holy
+obedience in order to salvation; the immortality of the soul; and
+the retributions of the judgment in the eternal punishment of the
+wicked, and salvation of the righteous.
+
+       *       *       *       *       *
+
+
+
+
+_The American Missionary Association._
+
+       *       *       *       *       *
+
+
+AIM AND WORK.
+
+To preach the Gospel to the poor. It originated in a sympathy with
+the almost friendless slaves. Since Emancipation it has devoted its
+main efforts to preparing the FREEDMEN for their duties as citizens
+and Christians in America and as missionaries in Africa. As closely
+related to this, it seeks to benefit the caste-persecuted CHINESE
+in America, and to co-operate with the Government in its humane
+and Christian policy towards the INDIANS. It has also a mission in
+AFRICA.
+
+
+STATISTICS.
+
+CHURCHES: _In the South_—In Va., 1; N. C., 5; S. C., 2; Ga., 11;
+Ky., 5; Tenn., 4; Ala., 12; La., 12; Miss., 1; Kansas, 2; Texas, 4.
+_Africa_, 1. _Among the Indians_, 2. Total, 62.
+
+INSTITUTIONS FOUNDED, FOSTERED OR SUSTAINED IN THE SOUTH.
+_Chartered_: Hampton, Va.; Berea, Ky.; Talladega, Ala.; Atlanta,
+Ga.; Nashville, Tenn., Tougaloo, Miss.; New Orleans, La.; and
+Austin, Texas, 8; _Graded or Normal Schools_: at Wilmington,
+Raleigh, N. C.; Charleston, Greenwood, S. C.; Macon, Atlanta, Ga.;
+Montgomery, Mobile, Athens, Selma, Ala; Memphis, Tenn.; 11; _Other
+Schools_, 7. Total, 26.
+
+TEACHERS, MISSIONARIES AND ASSISTANTS—Among the Freedmen, 209;
+among the Chinese, 17; among the Indians, 16; in foreign lands, 10.
+Total, 252. STUDENTS—In Theology, 74; Law, 8; in College Course,
+79; in other studies, 5,243. Total, 5,404. Scholars taught by
+former pupils of our schools, estimated at 100,000. INDIANS under
+the care of the Association, 13,000.
+
+
+WANTS.
+
+1. A steady INCREASE of regular income to keep pace with the
+growing work in the South. This increase can only be reached by
+_regular_ and _larger_ contributions from the churches—the feeble
+as well as the strong.
+
+2. ADDITIONAL BUILDINGS for our higher educational institutions, to
+accomodate the increasing numbers of students; MEETING HOUSES, for
+the new churches we are organizing; MORE MINISTERS, cultured and
+pious, for these churches.
+
+3. HELP FOR YOUNG MEN, to be educated as ministers here and
+missionaries to Africa—a pressing want.
+
+Before sending boxes, always correspond with the nearest A. M. A.
+office, as below.
+
+  NEW YORK      H. W. Hubbard. Esq., 56 Reade Street.
+  BOSTON        Rev. C. L. Woodworth, Room 21, Congregational House.
+  CHICAGO       Rev. Jas. Powell, 112 West Washington St.
+
+
+MAGAZINE.
+
+This Magazine will be sent, gratuitously, if desired, to the
+Missionaries of the Association; to Life Members; to all clergymen
+who take up collections for the Association; to Superintendents of
+Sabbath Schools; to College Libraries; to Theological Seminaries;
+to Societies of Inquiry on Missions; and to every donor who does
+not prefer to take it as a subscriber, and contributes in a year
+not less than five dollars.
+
+Those who wish to remember the AMERICAN MISSIONARY ASSOCIATION in
+their last Will and Testament, are earnestly requested to use the
+following
+
+
+FORM OF A BEQUEST.
+
+“I BEQUEATH to my executor (or executors) the sum of —— dollars in
+trust, to pay the same in —— days after my decease to the person
+who, when the same is payable, shall act as Treasurer of the
+“American Missionary Association,” New York City, to be applied
+under the direction of the Executive Committee of the Association,
+to its charitable uses and purposes.”
+
+The Will should be attested by three witnesses [in some States
+three are required—in other States only two], who should write
+against their names, their places of residence [if in cities,
+their street and number]. The following form of attestation will
+answer for every State in the Union: “Signed, sealed, published
+and declared by the said [A. B.] as his last Will and Testament,
+in presence of us, who, at the request of the said A. B., and in
+his presence, and in the presence of each other, have hereunto
+subscribed our names as witnesses.” In some States, it is required
+that the Will should be made at least two months before the death
+of the testator.
+
+
+                 *       *       *       *       *
+
+
+                      THE SCIENTIFIC AMERICAN
+
+                        THIRTY-THIRD YEAR.
+
+          THE MOST POPULAR SCIENTIFIC PAPER IN THE WORLD.
+
+ Only $3.20 a year, including Postage. Weekly. 52 Numbers a Year.
+                         4,000 Book pages.
+
+                 *       *       *       *       *
+
+=The Scientific American= is a large first-class Weekly Newspaper,
+of sixteen pages, printed in the most beautiful style, _profusely
+Illustrated with Splendid Engravings_, representing the newest
+Inventions and the most recent Advances in the Arts and Sciences;
+including MECHANICS and ENGINEERING, STEAM ENGINEERING, RAILWAY,
+MINING, CIVIL, GAS and HYDRAULIC ENGINEERING; MILL-WORK,
+IRON, STEEL and METAL-WORK; CHEMISTRY and CHEMICAL PROCESSES;
+ELECTRICITY, LIGHT, HEAT, SOUND; TECHNOLOGY, PHOTOGRAPHY, PRINTING,
+NEW MACHINERY, NEW PROCESSES, NEW RECIPES; Improvements pertaining
+to Textile Industry—WEAVING, DYEING, COLORING; New Industrial
+Products—ANIMAL, VEGETABLE and MINERAL; New and Interesting Facts
+in AGRICULTURE, HORTICULTURE, THE HOME, HEALTH, MEDICAL PROGRESS,
+SOCIAL SCIENCE, NATURAL HISTORY, GEOLOGY, ASTRONOMY, etc.
+
+The most valuable practical papers, by eminent writers in all
+departments of Science, will be found in the =Scientific American=;
+the whole presented in popular language, free from technical terms,
+illustrated with engravings, and so arranged as to interest and
+inform all classes of readers, old and young. The =Scientific
+American= is promotive of knowledge and progress in every community
+where it circulates. It should have a place in every Family,
+Reading-Room, Library, College, or School. Terms, =$3.20= per
+year, =$1.60= half year, which includes prepayment of Postage.
+Discount to Clubs and Agents. Single copies ten cents. Sold by all
+Newsdealers. Remit by postal order to MUNN & CO., Publishers, 37
+Park Row, New York.
+
+=PATENTS.= In connection with the =Scientific American=, Messrs.
+MUNN & CO. are Solicitors of American and Foreign Patents, and have
+the largest establishment in the world. Patents are obtained on the
+best terms. Models of New Inventions and Sketches examined, and
+advice free. A special notice is made in the =Scientific American=
+of all Inventions patented through this Agency, with the name and
+residence of the Patentee. Public attention is thus directed to the
+merits of the new patent, and sales or introduction often effected.
+Any person who has made a new discovery or invention can ascertain,
+free of charge, whether a patent can probably be obtained, by
+writing to the undersigned. Address for the Paper, or concerning
+Patents,
+
+            BRANCH OFFICE:
+  Cor. F. & 7th Sts. Washington, D. C.
+                                  MUNN & CO., 37 Park Row, New York.
+
+
+                 *       *       *       *       *
+
+
+                    The most extensive stock of
+
+                    Theological and S. S. Books
+
+                  In the Country, Good and Cheap.
+
+We publish books upon the “Clark” plan. In the regular way, Dr.
+Arnold’s 84 Rugby Lectures are $3.50—on the “Clark” plan, =$1.20=,
+postpaid.
+
+Besides our general stock of Sunday-school Books, we have one
+Library of shop-worn and second-hand Books, $50 retail, for
+=$12.50=, and 10 Libraries of New Books of the best quality, and
+cheaper than any offered.
+
+Also, Books sold by Agents only. Just ready, =The Old and New Bible
+Looking-Glass=, with =280= Beautiful Emblem Engravings. The work is
+written by Drs. CROSBY, GILLET, CHEEVER, PUNSHON of England, and
+others. It has received, from the ablest Divines and the religious
+press, the best indorsements of any book we have had.
+
+                       SEND FOR PARTICULARS.
+
+             N. TIBBALS & SONS, 37 Park Row, New York.
+
+
+                 *       *       *       *       *
+
+
+                        The Book of Psalms.
+
+            ARRANGED FOR RESPONSIVE READING IN SABBATH
+               SCHOOL, OR SOCIAL OR FAMILY WORSHIP.
+
+The current version is strictly followed, the only peculiarity
+being the arrangement according to the _Original Parallelisms_,
+for convenience in responsive reading. Two sizes. _Prices_: 32mo,
+Limp Cloth, 30 cts. per copy, $25 per 100; 16mo. Cloth, 70 cts. per
+copy, $56 per 100. Sent postpaid on receipt of price.
+
+TAINTOR BROTHERS, MERRILL & CO., Publishers,
+                                             758 Broadway, New York.
+
+
+                 *       *       *       *       *
+
+
+                       _Case’s Bible Atlas._
+
+Quarto Size. Accurate and up to the times. 16 Full Page Maps, with
+Explanatory Notes and Index. Designed to aid Sunday-school Teachers
+and Scholars. Every family needs it. Price $1.00. Sent by mail on
+receipt of price.
+
+=AGENTS WANTED= in every Township. _Liberal terms given_. Address
+O. D. CASE & CO., Hartford, Ct.
+
+
+                 *       *       *       *       *
+
+
+          “_Providence helps those who help themselves._”
+
+
+                         HAUTE NOUVEAUTE.
+
+                           GRAND OPENING
+
+                                OF
+
+                    NOVEL AND BEAUTIFUL STYLES.
+
+                           THE DEMOREST
+
+                 _Representative and Cosmopolitan_
+
+                       EMPORIUM OF FASHIONS
+
+         Furnishing the World’s Ideal of Artistic Beauty,
+          Novelty, Utility, Variety, Accuracy, Economy,
+                     and Fashionable Elegance.
+
+Always First Premium in every competition, including the World’s
+Fair; American Institute, New York; Mechanics’ Institute, Boston;
+Mechanics’ Institute, Maryland; New York and other State Fairs,
+and the exclusive award over all competitors at the Centennial
+Exhibition.
+
+                     PARIS, LONDON, NEW YORK,
+
+                     And Agencies Everywhere.
+
+                    RELIABLE PATTERNS IN SIZES,
+
+                    Illustrated and Described.
+
+                _Prices from 10 to 30 Cents each,
+                   or 5d. to 1s. 3d. Sterling._
+
+     SEND FOR CATALOGUE, with directions in French, English,
+              Portuguese, Dutch, German and Spanish.
+
+                   DEMOREST’S MONTHLY MAGAZINE,
+       25 cts.; 1s. Sterling. Yearly $3.00; 12s. Sterling,
+                    with a Magnificent Premium.
+
+                 The Demorest Quarterly Journal,
+      5 Cents; 2½d. Sterling. Yearly, 10 Cents; 5d. Sterling.
+
+                  Mme. Demorest’s What to Wear,
+                     15 Cents; 7½d. Sterling.
+
+              Mme. Demorest’s Portfolio of Fashions,
+            15 Cents; 7½ Sterling. _Either Post-free._
+
+                         NEW YORK HOUSE:
+                    17 EAST FOURTEENTH STREET.
+           11 Bouverie St., London. 5 Rue Serebe, Paris.
+
+           Mme. DEMOREST.           W. JENNINGS DEMOREST
+
+
+                 *       *       *       *       *
+
+
+                        A. S. BARNES & CO.
+
+                      Educational Publishers.
+
+TEACHERS are requested to send for our Descriptive Catalogue of 400
+Text Books and Professional Manuals.
+
+
+                   A. S. B. & Co., also publish
+
+
+Dale’s Lectures on Preaching:
+
+As delivered at Yale College, 1877. Contents: Perils of Young
+Preachers; The Intellect in Relation to Preaching; Reading;
+Preparation of Sermons; Extemporaneous Preaching and Style;
+Evangelistic Preaching; Pastoral Preaching; The Conduct of Public
+Worship. Price, postpaid, $1.50.
+
+
+Chas. G. Finney’s Memoirs:
+
+Written by Himself. 477 pp., 12mo. $2.00.
+
+
+“A wonderful volume it truly is.”—_Rev. T. L. Cuyler. D. D._ “What
+a fiery John the Baptist he was.”—_Rev. R. S. Storrs, D. D._
+
+
+Ray Palmer’s Poetical Works:
+
+Complete. With Portrait. 8vo, full gilt, rich, $4.00.
+
+
+Memoirs of P. P. Bliss:
+
+By Whittle, Moody and Sankey. With portraits of the Bliss Family,
+on steel. Price $2.
+
+
+Lyman Abbott’s Commentary
+
+ON THE NEW TESTAMENT (Illustrated). Matthew and Mark (1 vol.),
+$2.50; Acts. $1.75; others nearly ready.
+
+“Destined to be _the_ Commentary for thoughtful Bible readers....
+Simple, attractive, correct and judicious in the use of
+learning.—_Rev. Howard Crosby, D. D._”
+
+
+                   PUBLISHERS’ PRINCIPAL OFFICE,
+
+               =111 & 113 William Street, New York.=
+
+
+                 *       *       *       *       *
+
+
+                      Established A. D. 1850
+
+                                THE
+
+                             MANHATTAN
+
+                        Life Insurance Co.,
+
+                      156 Broadway, New York,
+
+                             HAS PAID
+
+                     $7,400,000 DEATH CLAIMS.
+
+                             HAS PAID
+
+           $4,900,000 Return Premiums to Policy-Holders,
+
+                         HAS A SURPLUS OF
+
+                   $1,700,000 OVER LIABILITIES,
+
+               _By New York Standard of Valuation._
+
+    _It gives the Best Insurance on the Best Lives at the most
+                         Favorable Rates._
+
+           EXAMINE THE PLANS AND RATES OF THIS COMPANY.
+
+                     HENRY STOKES, PRESIDENT,
+
+    C. Y. WEMPLE,
+             _Vice-President_.
+
+    J. L. HALSEY,
+             _Secretary_.
+
+    S. N. STEBBINS,
+             _Actuary_.
+
+    H. Y. WEMPLE,
+    H. B. STOKES,
+             _Assistant-Secretaries_.
+
+
+                 *       *       *       *       *
+
+
+                         BROWN BROS. & CO.
+
+                             BANKERS,
+
+              59 Wall St., New York,
+                  211 Chestnut St., Philadelphia,
+                                  66 State St., Boston.
+
+Issue, against cash deposited, or satisfactory guarantee of
+repayment,
+
+                  Circular Credits for Travelers,
+
+In DOLLARS for use in the United States and adjacent countries, and
+in POUNDS STERLING, for use in any part of the world.
+
+These Credits, bearing the signature of the holder, afford a ready
+means of identification, and the amounts for which they are issued
+can be availed of from time to time, wherever he may be, in sums to
+meet the requirements of the Traveler.
+
+Application for Credits may be made to either of the above houses
+direct, or through any respectable bank or banker in the country.
+
+
+They also issue Commercial Credits, make Cable Transfers of Money
+between this Country and England, and draw Bills of Exchange on
+Great Britain and Ireland.
+
+
+                 *       *       *       *       *
+
+
+                         E. D. Bassford’s
+
+                 COOPER INSTITUTE, NEW YORK CITY,
+
+Just received from European and Domestic Manufacturers complete
+new stock of fresh and beautiful goods. Every department of this
+great emporium is being re-stocked with the Newest and Best
+=House-Furnishing= and =Table Wares=, in =Hardware=, =China=,
+=Glass=, =Cutlery=, =Silver= and =Wooden-ware=, and everything
+in these lines for the complete furnishing of =House and
+Table=—=Dinner= and =Tea Sets=, =Chamber-ware=, =Cooking Utensils=,
+=Tin-ware= and
+
+                            BASSFORD’S
+
+                            CELEBRATED
+
+                      Nonpareil Refrigerator,
+
+The best made. Goods promptly delivered in city, or shipped daily.
+Complete Price Lists and Refrigerator Lists sent free, and every
+attention paid to inquiries by mail.
+
+                        Edward D. Bassford,
+
+               Nos. 1, 2, 3, 12, 13, 15, 16, and 17
+
+                        _COOPER INSTITUTE_,
+
+                          NEW YORK CITY.
+
+
+                 *       *       *       *       *
+
+
+                   Boynton’s Gas-Tight Furnaces
+
+                  HAVE A RENOWNED REPUTATION FOR
+
+  Great Heating Capacity, Freedom from Gases, being Durable, and
+                        Economical in Fuel.
+
+                        Over 40,000 in Use.
+
+                          [Illustration]
+
+Especially adapted for =Churches=, =Dwellings=, =Schools=,
+etc. Fitted with _anti-Clinker Grates_, Bronze Door-Pins,
+_Sifting-Grates_ for Ashes, _Ash-Pans_, etc., etc. Special
+_inducements_ made to =Clergymen= and =Churches=. Estimates for
+Heating made on application. Send for Circulars and Descriptions.
+
+            =RICHARDSON, BOYNTON & CO.=, Manufacturers,
+  _84 Lake St., Chicago.           232 and 234 Water St., New York._
+
+
+                 *       *       *       *       *
+
+
+                            CRAMPTON’S
+
+                             PALM SOAP
+
+                          IS THE BEST FOR
+
+                       The Laundry,
+
+                               The Kitchen,
+
+                              AND FOR
+
+                    General Household Purposes.
+
+                          MANUFACTURED BY
+
+                        CRAMPTON BROTHERS,
+
+               _Cor. Monroe & Jefferson Sts. N. Y._
+
+                 Send for Circular and Price List.
+
+
+                 *       *       *       *       *
+
+
+                          CABINET ORGANS
+
+HIGHEST HONORS AT ALL WORLD’S EXHIBITIONS. _Only American Organs
+awarded such at_ ANY. _Before buying or renting, send for our_
+LATEST CATALOGUES and CIRCULARS, with NEW STYLES, REDUCED PRICES
+and _much information_. _Sent free._
+
+                     MASON & HAMLIN ORGAN CO.,
+
+                                       BOSTON, NEW YORK, or CHICAGO.
+
+
+                 *       *       *       *       *
+
+
+                              ORGANS
+
+Splendid _=$340=_ ORGANS for _=$100=_. _=$300=_ for _=$90=_.
+_=$275=_ for _=$80=_. _=$200=_ for _=$70=_. _=$190=_ for _=$65=_;
+and _=$160=_ for _=$55=_. PIANOS—_=$900=_ Piano Forte for _=$225=_.
+_=$800=_ for _=$200=_. _=$750=_ for _=$185=_. _=$700=_ for
+_=$165=_. _=$600=_ for _=$135=_, _=cash=_, not used a year, in
+perfect order. Great Bargains, Unrivaled Instruments, Unequaled
+Prices. Send for Catalogues. =HORACE WATERS & SONS=, _40 East 14th
+Street, New York_.
+
+
+                 *       *       *       *       *
+
+
+                     Young America Press Co.,
+
+                          [Illustration]
+
+                     35 Murray St., New York,
+
+manufacture a variety of hand, self-inking, and rotary printing
+presses, ranging in price from $2 to $150, including the
+=Centennial=, =Young America=, =Cottage=, =Lightning=, and other
+celebrated printing machines. Our new rotary press, the =United
+States Jobber=, for cheapness and excellence, is unrivalled. Other
+presses taken in exchange. Lowest prices for type and printing
+material. Circulars free. Specimen Book of Type. 10 cts. A sample
+package of plain and fancy cards, 10 cents.
+
+
+                 *       *       *       *       *
+
+
+[Illustration:
+
+                             MARVIN’S
+                          FIRE & BURGLAR
+                               SAFES
+              COUNTER    PLATFORM    WAGON &    TRACK
+                              SCALES
+                     _MARVIN SAFE & SCALE CO.
+                        265 BROADWAY. N.Y.
+                     627 CHESTNUT ST. PHILA._
+]
+
+
+
+
+                    THE THIRTY-SECOND VOLUME OF
+
+                                THE
+
+                       American Missionary,
+
+                      ENLARGED AND IMPROVED.
+
+                 *       *       *       *       *
+
+                     SUBSCRIPTION DEPARTMENT.
+
+We publish =25,000= copies per month, giving news from the
+Institutions and Churches aided by the Association among the
+Freedmen in the South, the Indian tribes, the Chinese on the
+Pacific Coast, and the Negroes in Western Africa. Price, =Fifty
+Cents a Year, in Advance=.
+
+                        OUR NEW PAMPHLETS.
+
+No. 1.—=History= of the Association.
+
+No. 2.—=Africa=: Containing a History of the Mendi Mission, a
+Description of the Land and the People, and a presentation of their
+claims on America.
+
+No. 3.—=The Three Despised Races in the United States=; or, The
+Chinaman, the Indian, and the Freedman. An Address before the A. M.
+A., by Rev. Joseph Cook, of Boston, Mass.
+
+No. 4.—=The Educational Work.= Showing the nature and reality
+of the black man’s needs; the way to help him; the sentiment of
+Southern men; the work of the Romish Church; the wants of the A. M.
+A.
+
+       _Will be sent, free to any address, on application._
+
+                   H. W. HUBBARD, Ass’t-Treas., 56 Reade St., N. Y.
+
+                 *       *       *       *       *
+
+                      ADVERTISING DEPARTMENT.
+
+A limited space in our Magazine is devoted to Advertisements, for
+which our low rates and large circulation make its pages specially
+valuable. Our readers are among the best in the country, having an
+established character for integrity and thrift that constitute them
+valued customers in all departments of business.
+
+To Advertisers using display type and Cuts, who are accustomed
+to the “RULES” of the best Newspapers, requiring “DOUBLE RATES”
+for these “LUXURIES,” our wide pages, fine paper, and superior
+printing, with =no extra charge for cuts=, are advantages readily
+appreciated, and which add greatly to the appearance and effect of
+business announcements.
+
+We are, thus far, gratified with the success of this department,
+and solicit orders from all who have unexceptionable wares to
+advertise.
+
+Advertisements must be received by the TENTH of the month, in order
+to secure insertion in the following number. All communications in
+relation to advertising should be addressed to
+
+                                    J. H. DENISON, Adv’g Agent,
+                                         56 READE STREET, NEW YORK.
+
+
+                 *       *       *       *       *
+
+
+                            KINGSFORD’S
+
+                              OSWEGO
+
+             For PUDDINGS, CUSTARDS, BLANC MANGE, Etc.
+
+                            The BEST is
+
+[Illustration: Original KINGSFORD’S OSWEGO CORN STARCH. PERFECTLY PURE]
+
+  UNEQUALED FOR DELICACY, VARIETY OF USE AND HEALTHFULNESS. ADAPTED
+   ALIKE TO THE TASTE OF THE EPICURE AND THE WANTS OF THE INVALID.
+
+
+
+
+Transcriber’s Notes:
+
+
+Punctuation, spelling and grammar were changed only where the error
+appears to be a printing error. The punctuation changes are too
+numerous to list; the others are as follows:
+
+“Libera” changed to “Liberia” on page 223. (expeditions to Liberia)
+
+“obligatians” changed to “obligations” on page 231. (under great
+obligations)
+
+“Talladaga” changed to “Talladega” on page 251. (Unionville. Cong.
+Ch., for Talladega)
+
+Extra “(” removed from E.D. Bassford’s ad on page 256. (COOPER
+INSTITUTE, NEW YORK CITY)
+
+
+
+
+
+End of the Project Gutenberg EBook of The American Missionary -- Volume 32,
+No. 8, August, 1878, by Various
+
+*** END OF THIS PROJECT GUTENBERG EBOOK AMERICAN MISSIONARY, AUGUST 1878 ***
+
+***** This file should be named 53340-0.txt or 53340-0.zip *****
+This and all associated files of various formats will be found in:
+        http://www.gutenberg.org/5/3/3/4/53340/
+
+Produced by KarenD, Joshua Hutchinson and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+file was produced from images generously made available
+by Cornell University Digital Collections)
+
+Updated editions will replace the previous one--the old editions will
+be renamed.
+
+Creating the works from print editions not protected by U.S. copyright
+law means that no one owns a United States copyright in these works,
+so the Foundation (and you!) can copy and distribute it in the United
+States without permission and without paying copyright
+royalties. Special rules, set forth in the General Terms of Use part
+of this license, apply to copying and distributing Project
+Gutenberg-tm electronic works to protect the PROJECT GUTENBERG-tm
+concept and trademark. Project Gutenberg is a registered trademark,
+and may not be used if you charge for the eBooks, unless you receive
+specific permission. If you do not charge anything for copies of this
+eBook, complying with the rules is very easy. You may use this eBook
+for nearly any purpose such as creation of derivative works, reports,
+performances and research. They may be modified and printed and given
+away--you may do practically ANYTHING in the United States with eBooks
+not protected by U.S. copyright law. Redistribution is subject to the
+trademark license, especially commercial redistribution.
+
+START: FULL LICENSE
+
+THE FULL PROJECT GUTENBERG LICENSE
+PLEASE READ THIS BEFORE YOU DISTRIBUTE OR USE THIS WORK
+
+To protect the Project Gutenberg-tm mission of promoting the free
+distribution of electronic works, by using or distributing this work
+(or any other work associated in any way with the phrase "Project
+Gutenberg"), you agree to comply with all the terms of the Full
+Project Gutenberg-tm License available with this file or online at
+www.gutenberg.org/license.
+
+Section 1. General Terms of Use and Redistributing Project
+Gutenberg-tm electronic works
+
+1.A. By reading or using any part of this Project Gutenberg-tm
+electronic work, you indicate that you have read, understand, agree to
+and accept all the terms of this license and intellectual property
+(trademark/copyright) agreement. If you do not agree to abide by all
+the terms of this agreement, you must cease using and return or
+destroy all copies of Project Gutenberg-tm electronic works in your
+possession. If you paid a fee for obtaining a copy of or access to a
+Project Gutenberg-tm electronic work and you do not agree to be bound
+by the terms of this agreement, you may obtain a refund from the
+person or entity to whom you paid the fee as set forth in paragraph
+1.E.8.
+
+1.B. "Project Gutenberg" is a registered trademark. It may only be
+used on or associated in any way with an electronic work by people who
+agree to be bound by the terms of this agreement. There are a few
+things that you can do with most Project Gutenberg-tm electronic works
+even without complying with the full terms of this agreement. See
+paragraph 1.C below. There are a lot of things you can do with Project
+Gutenberg-tm electronic works if you follow the terms of this
+agreement and help preserve free future access to Project Gutenberg-tm
+electronic works. See paragraph 1.E below.
+
+1.C. The Project Gutenberg Literary Archive Foundation ("the
+Foundation" or PGLAF), owns a compilation copyright in the collection
+of Project Gutenberg-tm electronic works. Nearly all the individual
+works in the collection are in the public domain in the United
+States. If an individual work is unprotected by copyright law in the
+United States and you are located in the United States, we do not
+claim a right to prevent you from copying, distributing, performing,
+displaying or creating derivative works based on the work as long as
+all references to Project Gutenberg are removed. Of course, we hope
+that you will support the Project Gutenberg-tm mission of promoting
+free access to electronic works by freely sharing Project Gutenberg-tm
+works in compliance with the terms of this agreement for keeping the
+Project Gutenberg-tm name associated with the work. You can easily
+comply with the terms of this agreement by keeping this work in the
+same format with its attached full Project Gutenberg-tm License when
+you share it without charge with others.
+
+1.D. The copyright laws of the place where you are located also govern
+what you can do with this work. Copyright laws in most countries are
+in a constant state of change. If you are outside the United States,
+check the laws of your country in addition to the terms of this
+agreement before downloading, copying, displaying, performing,
+distributing or creating derivative works based on this work or any
+other Project Gutenberg-tm work. The Foundation makes no
+representations concerning the copyright status of any work in any
+country outside the United States.
+
+1.E. Unless you have removed all references to Project Gutenberg:
+
+1.E.1. The following sentence, with active links to, or other
+immediate access to, the full Project Gutenberg-tm License must appear
+prominently whenever any copy of a Project Gutenberg-tm work (any work
+on which the phrase "Project Gutenberg" appears, or with which the
+phrase "Project Gutenberg" is associated) is accessed, displayed,
+performed, viewed, copied or distributed:
+
+  This eBook is for the use of anyone anywhere in the United States and
+  most other parts of the world at no cost and with almost no
+  restrictions whatsoever. You may copy it, give it away or re-use it
+  under the terms of the Project Gutenberg License included with this
+  eBook or online at www.gutenberg.org. If you are not located in the
+  United States, you'll have to check the laws of the country where you
+  are located before using this ebook.
+
+1.E.2. If an individual Project Gutenberg-tm electronic work is
+derived from texts not protected by U.S. copyright law (does not
+contain a notice indicating that it is posted with permission of the
+copyright holder), the work can be copied and distributed to anyone in
+the United States without paying any fees or charges. If you are
+redistributing or providing access to a work with the phrase "Project
+Gutenberg" associated with or appearing on the work, you must comply
+either with the requirements of paragraphs 1.E.1 through 1.E.7 or
+obtain permission for the use of the work and the Project Gutenberg-tm
+trademark as set forth in paragraphs 1.E.8 or 1.E.9.
+
+1.E.3. If an individual Project Gutenberg-tm electronic work is posted
+with the permission of the copyright holder, your use and distribution
+must comply with both paragraphs 1.E.1 through 1.E.7 and any
+additional terms imposed by the copyright holder. Additional terms
+will be linked to the Project Gutenberg-tm License for all works
+posted with the permission of the copyright holder found at the
+beginning of this work.
+
+1.E.4. Do not unlink or detach or remove the full Project Gutenberg-tm
+License terms from this work, or any files containing a part of this
+work or any other work associated with Project Gutenberg-tm.
+
+1.E.5. Do not copy, display, perform, distribute or redistribute this
+electronic work, or any part of this electronic work, without
+prominently displaying the sentence set forth in paragraph 1.E.1 with
+active links or immediate access to the full terms of the Project
+Gutenberg-tm License.
+
+1.E.6. You may convert to and distribute this work in any binary,
+compressed, marked up, nonproprietary or proprietary form, including
+any word processing or hypertext form. However, if you provide access
+to or distribute copies of a Project Gutenberg-tm work in a format
+other than "Plain Vanilla ASCII" or other format used in the official
+version posted on the official Project Gutenberg-tm web site
+(www.gutenberg.org), you must, at no additional cost, fee or expense
+to the user, provide a copy, a means of exporting a copy, or a means
+of obtaining a copy upon request, of the work in its original "Plain
+Vanilla ASCII" or other form. Any alternate format must include the
+full Project Gutenberg-tm License as specified in paragraph 1.E.1.
+
+1.E.7. Do not charge a fee for access to, viewing, displaying,
+performing, copying or distributing any Project Gutenberg-tm works
+unless you comply with paragraph 1.E.8 or 1.E.9.
+
+1.E.8. You may charge a reasonable fee for copies of or providing
+access to or distributing Project Gutenberg-tm electronic works
+provided that
+
+* You pay a royalty fee of 20% of the gross profits you derive from
+  the use of Project Gutenberg-tm works calculated using the method
+  you already use to calculate your applicable taxes. The fee is owed
+  to the owner of the Project Gutenberg-tm trademark, but he has
+  agreed to donate royalties under this paragraph to the Project
+  Gutenberg Literary Archive Foundation. Royalty payments must be paid
+  within 60 days following each date on which you prepare (or are
+  legally required to prepare) your periodic tax returns. Royalty
+  payments should be clearly marked as such and sent to the Project
+  Gutenberg Literary Archive Foundation at the address specified in
+  Section 4, "Information about donations to the Project Gutenberg
+  Literary Archive Foundation."
+
+* You provide a full refund of any money paid by a user who notifies
+  you in writing (or by e-mail) within 30 days of receipt that s/he
+  does not agree to the terms of the full Project Gutenberg-tm
+  License. You must require such a user to return or destroy all
+  copies of the works possessed in a physical medium and discontinue
+  all use of and all access to other copies of Project Gutenberg-tm
+  works.
+
+* You provide, in accordance with paragraph 1.F.3, a full refund of
+  any money paid for a work or a replacement copy, if a defect in the
+  electronic work is discovered and reported to you within 90 days of
+  receipt of the work.
+
+* You comply with all other terms of this agreement for free
+  distribution of Project Gutenberg-tm works.
+
+1.E.9. If you wish to charge a fee or distribute a Project
+Gutenberg-tm electronic work or group of works on different terms than
+are set forth in this agreement, you must obtain permission in writing
+from both the Project Gutenberg Literary Archive Foundation and The
+Project Gutenberg Trademark LLC, the owner of the Project Gutenberg-tm
+trademark. Contact the Foundation as set forth in Section 3 below.
+
+1.F.
+
+1.F.1. Project Gutenberg volunteers and employees expend considerable
+effort to identify, do copyright research on, transcribe and proofread
+works not protected by U.S. copyright law in creating the Project
+Gutenberg-tm collection. Despite these efforts, Project Gutenberg-tm
+electronic works, and the medium on which they may be stored, may
+contain "Defects," such as, but not limited to, incomplete, inaccurate
+or corrupt data, transcription errors, a copyright or other
+intellectual property infringement, a defective or damaged disk or
+other medium, a computer virus, or computer codes that damage or
+cannot be read by your equipment.
+
+1.F.2. LIMITED WARRANTY, DISCLAIMER OF DAMAGES - Except for the "Right
+of Replacement or Refund" described in paragraph 1.F.3, the Project
+Gutenberg Literary Archive Foundation, the owner of the Project
+Gutenberg-tm trademark, and any other party distributing a Project
+Gutenberg-tm electronic work under this agreement, disclaim all
+liability to you for damages, costs and expenses, including legal
+fees. YOU AGREE THAT YOU HAVE NO REMEDIES FOR NEGLIGENCE, STRICT
+LIABILITY, BREACH OF WARRANTY OR BREACH OF CONTRACT EXCEPT THOSE
+PROVIDED IN PARAGRAPH 1.F.3. YOU AGREE THAT THE FOUNDATION, THE
+TRADEMARK OWNER, AND ANY DISTRIBUTOR UNDER THIS AGREEMENT WILL NOT BE
+LIABLE TO YOU FOR ACTUAL, DIRECT, INDIRECT, CONSEQUENTIAL, PUNITIVE OR
+INCIDENTAL DAMAGES EVEN IF YOU GIVE NOTICE OF THE POSSIBILITY OF SUCH
+DAMAGE.
+
+1.F.3. LIMITED RIGHT OF REPLACEMENT OR REFUND - If you discover a
+defect in this electronic work within 90 days of receiving it, you can
+receive a refund of the money (if any) you paid for it by sending a
+written explanation to the person you received the work from. If you
+received the work on a physical medium, you must return the medium
+with your written explanation. The person or entity that provided you
+with the defective work may elect to provide a replacement copy in
+lieu of a refund. If you received the work electronically, the person
+or entity providing it to you may choose to give you a second
+opportunity to receive the work electronically in lieu of a refund. If
+the second copy is also defective, you may demand a refund in writing
+without further opportunities to fix the problem.
+
+1.F.4. Except for the limited right of replacement or refund set forth
+in paragraph 1.F.3, this work is provided to you 'AS-IS', WITH NO
+OTHER WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
+LIMITED TO WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PURPOSE.
+
+1.F.5. Some states do not allow disclaimers of certain implied
+warranties or the exclusion or limitation of certain types of
+damages. If any disclaimer or limitation set forth in this agreement
+violates the law of the state applicable to this agreement, the
+agreement shall be interpreted to make the maximum disclaimer or
+limitation permitted by the applicable state law. The invalidity or
+unenforceability of any provision of this agreement shall not void the
+remaining provisions.
+
+1.F.6. INDEMNITY - You agree to indemnify and hold the Foundation, the
+trademark owner, any agent or employee of the Foundation, anyone
+providing copies of Project Gutenberg-tm electronic works in
+accordance with this agreement, and any volunteers associated with the
+production, promotion and distribution of Project Gutenberg-tm
+electronic works, harmless from all liability, costs and expenses,
+including legal fees, that arise directly or indirectly from any of
+the following which you do or cause to occur: (a) distribution of this
+or any Project Gutenberg-tm work, (b) alteration, modification, or
+additions or deletions to any Project Gutenberg-tm work, and (c) any
+Defect you cause.
+
+Section 2. Information about the Mission of Project Gutenberg-tm
+
+Project Gutenberg-tm is synonymous with the free distribution of
+electronic works in formats readable by the widest variety of
+computers including obsolete, old, middle-aged and new computers. It
+exists because of the efforts of hundreds of volunteers and donations
+from people in all walks of life.
+
+Volunteers and financial support to provide volunteers with the
+assistance they need are critical to reaching Project Gutenberg-tm's
+goals and ensuring that the Project Gutenberg-tm collection will
+remain freely available for generations to come. In 2001, the Project
+Gutenberg Literary Archive Foundation was created to provide a secure
+and permanent future for Project Gutenberg-tm and future
+generations. To learn more about the Project Gutenberg Literary
+Archive Foundation and how your efforts and donations can help, see
+Sections 3 and 4 and the Foundation information page at
+www.gutenberg.org
+
+
+
+Section 3. Information about the Project Gutenberg Literary Archive Foundation
+
+The Project Gutenberg Literary Archive Foundation is a non profit
+501(c)(3) educational corporation organized under the laws of the
+state of Mississippi and granted tax exempt status by the Internal
+Revenue Service. The Foundation's EIN or federal tax identification
+number is 64-6221541. Contributions to the Project Gutenberg Literary
+Archive Foundation are tax deductible to the full extent permitted by
+U.S. federal laws and your state's laws.
+
+The Foundation's principal office is in Fairbanks, Alaska, with the
+mailing address: PO Box 750175, Fairbanks, AK 99775, but its
+volunteers and employees are scattered throughout numerous
+locations. Its business office is located at 809 North 1500 West, Salt
+Lake City, UT 84116, (801) 596-1887. Email contact links and up to
+date contact information can be found at the Foundation's web site and
+official page at www.gutenberg.org/contact
+
+For additional contact information:
+
+    Dr. Gregory B. Newby
+    Chief Executive and Director
+    gbnewby@pglaf.org
+
+Section 4. Information about Donations to the Project Gutenberg
+Literary Archive Foundation
+
+Project Gutenberg-tm depends upon and cannot survive without wide
+spread public support and donations to carry out its mission of
+increasing the number of public domain and licensed works that can be
+freely distributed in machine readable form accessible by the widest
+array of equipment including outdated equipment. Many small donations
+($1 to $5,000) are particularly important to maintaining tax exempt
+status with the IRS.
+
+The Foundation is committed to complying with the laws regulating
+charities and charitable donations in all 50 states of the United
+States. Compliance requirements are not uniform and it takes a
+considerable effort, much paperwork and many fees to meet and keep up
+with these requirements. We do not solicit donations in locations
+where we have not received written confirmation of compliance. To SEND
+DONATIONS or determine the status of compliance for any particular
+state visit www.gutenberg.org/donate
+
+While we cannot and do not solicit contributions from states where we
+have not met the solicitation requirements, we know of no prohibition
+against accepting unsolicited donations from donors in such states who
+approach us with offers to donate.
+
+International donations are gratefully accepted, but we cannot make
+any statements concerning tax treatment of donations received from
+outside the United States. U.S. laws alone swamp our small staff.
+
+Please check the Project Gutenberg Web pages for current donation
+methods and addresses. Donations are accepted in a number of other
+ways including checks, online payments and credit card donations. To
+donate, please visit: www.gutenberg.org/donate
+
+Section 5. General Information About Project Gutenberg-tm electronic works.
+
+Professor Michael S. Hart was the originator of the Project
+Gutenberg-tm concept of a library of electronic works that could be
+freely shared with anyone. For forty years, he produced and
+distributed Project Gutenberg-tm eBooks with only a loose network of
+volunteer support.
+
+Project Gutenberg-tm eBooks are often created from several printed
+editions, all of which are confirmed as not protected by copyright in
+the U.S. unless a copyright notice is included. Thus, we do not
+necessarily keep eBooks in compliance with any particular paper
+edition.
+
+Most people start at our Web site which has the main PG search
+facility: www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+

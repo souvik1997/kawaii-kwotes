@@ -11,7 +11,7 @@ defmodule KawaiiKwotes do
     children = [
       # Start the endpoint when the application starts
       supervisor(KawaiiKwotes.Endpoint, []),
-      worker(KawaiiKwotes.MarkovChain, [[chain], [name: MarkovChain]])
+      worker(KawaiiKwotes.MarkovChain, [chain, [name: MarkovChain]])
       # Here you could define other workers and supervisors as children
       # worker(KawaiiKwotes.Worker, [arg1, arg2, arg3]),
     ]
