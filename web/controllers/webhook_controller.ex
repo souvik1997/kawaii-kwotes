@@ -5,15 +5,16 @@ defmodule KawaiiKwotes.WebHookController do
   def message_received(msg) do
     text = FacebookMessenger.Response.message_texts(msg) |> hd
     sender = FacebookMessenger.Response.message_senders(msg) |> hd
-    FacebookMessenger.Sender.send(sender, text)
+    sendResponse(sender, %{text: text })
+    # used to be FacebookMessenger.Sender.send(sender, text)
   end
 
   def manager do
     Application.get_env(:facebook_messenger, :request_manager) || FacebookMessenger.RequestManager
   end
 
-  @spec send(String.t, String.t) :: HTTPotion.Response.t
-  def send(recepient, message) do
+  @spec sendResponse(String.t, String.t) :: HTTPotion.Response.t
+  def sendResponse(recepient, message) do
     res = manager.post(
       url: url,
       body: json_payload(recepient, message)
