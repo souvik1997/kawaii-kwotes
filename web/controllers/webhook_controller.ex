@@ -10,7 +10,7 @@ defmodule KawaiiKwotes.WebHookController do
     FacebookMessenger.Sender.send(sender, %{message: %{attachment: %{
                                                          type: "image",
                                                          payload: %{
-                                                           url: "https://petersapparel.com/img/shirt.png"
+                                                           url: "http://images6.fanpop.com/image/photos/34600000/Kawaii-girl-kawaii-anime-34624723-392-500.jpg"
                                                          }
                                                        }}})
   end
