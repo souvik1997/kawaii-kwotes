@@ -5,7 +5,7 @@ defmodule KawaiiKwotes.WebHookController do
 
   def message_received(msg) do
     text = FacebookMessenger.Response.message_texts(msg) |> hd
-    Logger.info("received text: #{text}")
+    Logger.info("received text: #{inspect(text)}")
     case String.contains?(text, ["#"]) do
       true ->
         Logger.info("error message from FB: #{text}")
