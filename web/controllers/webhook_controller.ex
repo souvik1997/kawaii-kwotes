@@ -11,7 +11,7 @@ defmodule KawaiiKwotes.WebHookController do
     case text do
       nil -> :ok
       _ ->
-        FacebookMessenger.Sender.send(sender, %{message: %{text: text}})
+        FacebookMessenger.Sender.send(sender, %{message: %{text: markovText}})
         FacebookMessenger.Sender.send(sender, %{message: %{
                                                    attachment: %{
                                                      type: "image",
