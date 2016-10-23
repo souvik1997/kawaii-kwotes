@@ -7,6 +7,11 @@ defmodule KawaiiKwotes.WebHookController do
     sender = FacebookMessenger.Response.message_senders(msg) |> hd
     # sendResponse(sender, %{text: text })
     # used to be FacebookMessenger.Sender.send(sender, text)
-    FacebookMessenger.Sender.send(sender, %{message: %{text: text}})
+    FacebookMessenger.Sender.send(sender, %{message: %{attachment: %{
+                                                         type: "image",
+                                                         payload: %{
+                                                           url: "https://petersapparel.com/img/shirt.png"
+                                                         }
+                                                       }}})
   end
 end
