@@ -6,6 +6,7 @@
   "ecto": {:hex, :ecto, "2.0.5", "7f4c79ac41ffba1a4c032b69d7045489f0069c256de606523c65d9f8188e502d", [:mix], [{:db_connection, "~> 1.0-rc.4", [hex: :db_connection, optional: true]}, {:decimal, "~> 1.1.2 or ~> 1.2", [hex: :decimal, optional: false]}, {:mariaex, "~> 0.7.7", [hex: :mariaex, optional: true]}, {:poison, "~> 1.5 or ~> 2.0", [hex: :poison, optional: true]}, {:poolboy, "~> 1.5", [hex: :poolboy, optional: false]}, {:postgrex, "~> 0.12.0", [hex: :postgrex, optional: true]}, {:sbroker, "~> 1.0-beta", [hex: :sbroker, optional: true]}]},
   "ex_microsoftbot": {:hex, :ex_microsoftbot, "0.1.0", "9ca6b5c3266445e2cfbf6482a65bf9b94bbebfdc2062290ff446b6353c27fbe9", [:mix], [{:httpotion, "~> 2.2", [hex: :httpotion, optional: false]}, {:poison, "~> 2.1", [hex: :poison, optional: false]}]},
   "facebook_messenger": {:git, "https://github.com/souvik1997/facebook_messenger.git", "8968406262df4b6fa0d69565c26fe7065c64231b", [tag: "master"]},
+  "faust": {:hex, :faust, "0.1.0", "a1c5ac7cff183b022f22f20224e39f59af69984551dcee8ec862886a11bf8370", [:mix], []},
   "fs": {:hex, :fs, "0.9.2", "ed17036c26c3f70ac49781ed9220a50c36775c6ca2cf8182d123b6566e49ec59", [:rebar], []},
   "gettext": {:hex, :gettext, "0.12.1", "c0624f52763469ef7a3674919ae28b8286d88195b90fa1516180f31bbbd26d14", [:mix], []},
   "httpotion": {:hex, :httpotion, "3.0.2", "525b9bfeb592c914a61a8ee31fdde3871e1861dfe805f8ee5f711f9f11a93483", [:mix], [{:ibrowse, "~> 4.2", [hex: :ibrowse, optional: false]}]},
